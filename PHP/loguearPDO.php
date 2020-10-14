@@ -21,7 +21,11 @@ try {
     }
         
 else{
-        print "Acceso denegado";
+    
+    echo "<script>
+    alert('Algún campo no es valido');
+    window.location= '../index.html'
+</script>";
          
     }
 
