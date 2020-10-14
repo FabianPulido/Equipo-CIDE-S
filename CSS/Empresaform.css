@@ -1,0 +1,29 @@
+label{
+    font-size:20px;
+    margin-left:5%;
+    padding-top:10%;
+    color:white;
+    
+}
+input{
+    width:90%;
+    height:7%;
+    border:2px solid white;
+    border-radius:20px;
+    background-color:#2E313E;
+    padding-left:5%;
+    margin-left:5%;
+    margin-top:5%;
+}
+
+button{
+    color:white;
+    width:90%;
+    height:7%;
+    border:2px solid white;
+    border-radius:20px;
+    background-color:#2E313E;
+    padding-left:5%;
+    margin-left:5%;
+    margin-top:8%;
+}
