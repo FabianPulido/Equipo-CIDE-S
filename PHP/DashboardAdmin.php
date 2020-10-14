@@ -40,6 +40,37 @@
 
         </div>
 
+
+
+    
+    <!-- Formulario de Login -->
+    <section class="form-register" id="form">
+        
+        <form action="PHP/loguearPDO.php" method="post">
+
+            <h4>Inicia sesion</h4>
+
+            <!-- Input NombreEmpresa -->
+            <input class="controls" type="text" name="NombreEmpresa" id="NombreEmpresa" placeholder="Ingrese su Nombre">
+    
+            <!-- Input EmailEmpresa -->
+            <input class="controls" type="email" name="EmailEmpresa" id="EmailEmpresa" placeholder="Ingrese su Correo">
+    
+            <!-- Input PasswordEmpresa -->
+            <input class="controls" type="password" name="PasswordEmpresa" id="PasswordEmpresa" placeholder="Ingrese su Contraseña">
+    
+            <p>
+                Estoy de acuerdo con 
+                <a href="#">
+                    Terminos y Condiciones
+                </a>
+            </p>
+            <input class="botons" type="submit" value="Registrar">
+
+        </form>
+
+    </section>
+
     <!-- Optional JavaScript; choose one of the two! -->
 
     <!-- Option 1: jQuery and Bootstrap Bundle (includes Popper) -->
