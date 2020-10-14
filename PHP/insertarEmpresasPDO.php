@@ -16,5 +16,8 @@ $stmt->bindParam(3, $pclave);
 
 // Excecute
 $stmt->execute();
-echo 'datos guardados con exito!';
+echo "<script>
+        alert('Empresa registrada!');
+        window.location= 'DashboardAdmin.php'
+    </script>";
 ?>

@@ -23,11 +23,11 @@
     <form action="insertarEmpresasPDO.php" method="POST">
     <h2>Crear Empresa</h2>
     <label>Nombre de empresa</label>
-    <input placeholder=".." name="nombre"><br>
+    <input placeholder=".."  style="color:white;" name="nombre"><br>
     <label>E-mail de empresa</label>
-    <input placeholder=".." name="correo"><br>
+    <input placeholder=".."  style="color:white;"name="correo"><br>
     <label>Contraseña de empresa</label>
-    <input placeholder=".." name="clave"><br>
+    <input placeholder=".."  style="color:white;" name="clave"><br>
     <button type="submit"> Guardar Cambios </button>
 </form>
   </div>
