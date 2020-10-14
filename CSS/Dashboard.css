@@ -11,7 +11,7 @@
 
 .navbar{
     position: absolute;
-    background-color:#2E313E;
+    background-color:#545661;
     height: 43.5rem;
     left: 0px;
     top: 0px;
@@ -28,6 +28,7 @@
     color: white;
     border-color:white;
     border-radius: 10px;
+    margin-top: -70px;
     margin-bottom: 40px;
 }
 
@@ -47,6 +48,10 @@
 .navbar ol li a{
     text-decoration: none;
     color: white;
+}
+
+.navbar ol li #Rp{
+    cursor: pointer;
 }
 
 /*--------------------------------------------------*/
