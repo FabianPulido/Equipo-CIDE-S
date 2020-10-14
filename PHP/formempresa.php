@@ -12,21 +12,22 @@
 	crossorigin="anonymous"></script>
     <title>HackSiigo</title>
    
-    <link rel="stylesheet" href="../CSS/Empresaform.css">
+    <link rel="stylesheet" href="../CSS/Empresafor.css">
     <link href="https://fonts.googleapis.com/css2?family=Scada:ital@1&display=swap" rel="stylesheet">
   </head>
   <body>
-<!-- Formulario empresa -->
 
-<div class="contenedor">
+    <!-- Formulario empresa -->
+
+  <div class="contenedorr">
     <h2>Crear Empresa</h2>
     <label>Nombre de empresa</label>
-    <input type="text" placeholder=".."><br>
-    <label>Correo de empresa</label>
-    <input type="text" placeholder="e-mail.."><br>
-    <label>Contraseña de empresa</label>
-    <input type="text" placeholder=".."><br>
-    <button type="submit"> Guardar Cambios </button>
+    <input placeholder=".."><br>
+    <label>Dirección de empresa</label>
+    <input placeholder=".."><br>
+    <label>Telefono de empresa</label>
+    <input placeholder=".."><br>
+    <button> Guardar Cambios </button>
   </div>
 
 
