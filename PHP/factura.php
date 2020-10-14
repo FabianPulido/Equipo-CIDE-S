@@ -12,7 +12,7 @@
 	crossorigin="anonymous"></script>
     <title>HackSiigo</title>
    
-    <link rel="stylesheet" href="../CSS/Empresaform.css">
+    <link rel="stylesheet" href="../CSS/Empresafor.css">
     <link href="https://fonts.googleapis.com/css2?family=Scada:ital@1&display=swap" rel="stylesheet">
   </head>
   <body>
