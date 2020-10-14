@@ -8,7 +8,7 @@
 
 
     $stmt = $conn->prepare("INSERT INTO hackathon.sucursal
-        (Nombre_sucursal, Email_sucursal, Password_sucursal)
+        (Nombre_sucursal, Direccion_sucursal, Telefono_sucursal)
         VALUES 
         (?,?,?)
     ");
