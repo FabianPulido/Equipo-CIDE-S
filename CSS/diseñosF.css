@@ -9,7 +9,7 @@
     border-radius: 8px;
     left: 450px;
     font-family: cursive;
-
+    display: none;
 }
 
 .formulario .boton{

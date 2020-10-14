@@ -57,6 +57,7 @@
     font-family: 'calibri';
     color: white;
     box-shadow: 7px 13px 37px #000;
+    display: none;
 }
   
 .form-register h4 {
@@ -101,4 +102,11 @@
     color: white;
     margin: 16px 0;
     font-size: 16px;
+}
+
+/*----------------------------------------------------------------*/
+.table{
+    position: absolute;
+    left: 15rem;
+    top: 5rem;
 }
