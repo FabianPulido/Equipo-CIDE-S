@@ -16,8 +16,10 @@
     <link href="https://fonts.googleapis.com/css2?family=Scada:ital@1&display=swap" rel="stylesheet">
   </head>
   <body>
+<!-- Formulario empresa -->
 
-  <div class="contenedor">
+<div class="contenedor">
+    <h2>Crear Empresa</h2>
     <label>Nombre de empresa</label>
     <input placeholder=".."><br>
     <label>Dirección de empresa</label>
