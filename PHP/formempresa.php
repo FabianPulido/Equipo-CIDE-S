@@ -20,7 +20,7 @@
     <!-- Formulario empresa -->
 
   <div class="contenedorr">
-    <form action="insertarEmpresasPDO.php">
+    <form action="insertarEmpresasPDO.php" method="POST">
     <h2>Crear Empresa</h2>
     <label>Nombre de empresa</label>
     <input placeholder=".." name="nombre"><br>
