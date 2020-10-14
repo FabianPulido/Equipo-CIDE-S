@@ -20,7 +20,9 @@
     <div class="navbar">
     
         <h1>
-            HackSiigo
+            <a href="../index.html">
+                HackSiigo
+            </a>
         </h1>
 
         <ol>
@@ -40,13 +42,19 @@
 
     <div class="aside-left">
         <div class="notice">
-            <h3>
-                Haz parte de nuestro selecto grupo de proveedores, domina el mercado <br> 
-                y haz crecer tu empresa distribuidora
-            </h3>
-            <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum at sit suscipit voluptatem accusamus eius cum, ullam eum, dolorum unde numquam impedit porro reiciendis nulla. Deleniti magni dignissimos possimus unde!
-            </p>
+            <div class="banner">
+                <h3>
+                    ¡Unete Ahora Mismo!
+                </h3>
+            </div>
+            <div class="vertical">
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                    Veritatis ex nesciunt iste voluptatum, consectetur quaerat 
+                    quam sed vel quia accusamus impedit molestiae distinctio 
+                    cupiditate natus esse autem ut reiciendis ab.
+                </p>
+            </div>
         </div>
         <div id="now"></div>
     </div>
