@@ -109,15 +109,15 @@
 
 /*----------------------------------------------------------------*/
 .show-SS{
-    background-color: blue;
-    width: 570px;
-    height: auto;
-}
-
-.table{
     position: absolute;
     left: 15rem;
     top: 5rem;
+    width: 570px;
+    height: 200px;
+    overflow-y: auto;
+}
+
+.table{
     width: 570px;
     height: 34px;
     border-color: black;
