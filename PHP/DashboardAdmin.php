@@ -48,23 +48,17 @@
         
         <form action="PHP/loguearPDO.php" method="post">
 
-            <h4>Inicia sesion</h4>
+            <h4>Registrar Sede/Sucursal</h4>
 
-            <!-- Input NombreEmpresa -->
-            <input class="controls" type="text" name="NombreEmpresa" id="NombreEmpresa" placeholder="Ingrese su Nombre">
+            <!-- Input NombreSede/Sucursal -->
+            <input class="controls" type="text" name="NombreSede" placeholder="Ingrese Nombre Sede/Sucursal">
     
-            <!-- Input EmailEmpresa -->
-            <input class="controls" type="email" name="EmailEmpresa" id="EmailEmpresa" placeholder="Ingrese su Correo">
+            <!-- Input EmailSede/Sucursal -->
+            <input class="controls" type="email" name="EmailSede" placeholder="Ingrese Correo Sede/Sucursal">
     
-            <!-- Input PasswordEmpresa -->
-            <input class="controls" type="password" name="PasswordEmpresa" id="PasswordEmpresa" placeholder="Ingrese su Contraseña">
-    
-            <p>
-                Estoy de acuerdo con 
-                <a href="#">
-                    Terminos y Condiciones
-                </a>
-            </p>
+            <!-- Input PasswordSede/Sucursal -->
+            <input class="controls" type="password" name="PasswordSede" placeholder="Ingrese Contraseña Sede/Sucursal">
+
             <input class="botons" type="submit" value="Registrar">
 
         </form>
