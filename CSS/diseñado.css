@@ -52,12 +52,11 @@
     background: #24303c;
     padding: 30px;
     margin-left: 37%;
-    margin-top: 30px;
+    margin-top: 10rem;
     border-radius: 10px;
     font-family: 'calibri';
     color: white;
     box-shadow: 7px 13px 37px #000;
-    display: none;
 }
   
 .form-register h4 {
