@@ -128,3 +128,20 @@
     border-color: black;
     text-align: center;
 }
+
+/* Botones del listar sucursales */
+
+#botoneditar{
+    background-color:green;
+    border:2px solid white;
+    color:white;
+    border-radius:10px;
+    width:48%;
+}
+#botonborrar{
+    background-color:red;
+    border:2px solid white;
+    color:white;
+    border-radius:10px;
+    width:48%;
+}
