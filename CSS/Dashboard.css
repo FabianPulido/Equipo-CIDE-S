@@ -1,9 +1,12 @@
 /** diseño del navbar principal**/
 
+@import url('https://fonts.googleapis.com/css2?family=Salsa&display=swap');
+
 *{
     padding: 0%;
     margin: 0%;
     box-sizing: border-box;
+    font-family: 'Salsa', cursive;
 }
 
 .navbar{
@@ -105,8 +108,18 @@
 }
 
 /*----------------------------------------------------------------*/
+.show-SS{
+    background-color: blue;
+    width: 570px;
+    height: auto;
+}
+
 .table{
     position: absolute;
     left: 15rem;
     top: 5rem;
+    width: 570px;
+    height: 34px;
+    border-color: black;
+    text-align: center;
 }
