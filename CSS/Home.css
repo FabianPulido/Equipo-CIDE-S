@@ -12,6 +12,32 @@ body{
 
 /*---------------------NavBar--------------------------*/
 
+.navbar{
+    display: flex;
+}
+
 .navbar .name{
     color: white;
+    margin-top: 40px;
+    margin-left: 40px;
+}
+
+.navbar .options{
+    position: absolute;
+    right: 7%;
+    margin-top: 50px;
+}
+
+.navbar .options button{
+    background-color: transparent;
+    color: white;
+    width: 100px;
+    height: 30px;
+    border-color: white;
+    border-radius: 30px ;
+}
+
+.navbar .options button:hover{
+    background-color: white;
+    color: black;
 }
