@@ -13,7 +13,7 @@ try {
 
     print $Usuario =$_POST['NombreEmpresa'];
     print $Pass =$_POST['PasswordEmpresa'];
-    print $email =$_POST['EmailPassword'];
+    print $email =$_POST['EmailEmpresa'];
 
     if ($Usuario == $row['Nombre_empresa'] AND $email == $row['Correo_emp'] AND $Pass == $row['Contrasena_emp']) {
         
