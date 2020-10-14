@@ -1,47 +1,47 @@
 /** diseño del navbar principal**/
 
+*{
+    padding: 0%;
+    margin: 0%;
+    box-sizing: border-box;
+}
+
 .navbar{
     position: absolute;
     background-color:#2E313E;
-    height: 100%;
+    height: 43.5rem;
     left: 0px;
     top: 0px;
-    width: 7%;
+    width: 10%;
     color: cornsilk;
     padding: 20px;
 
 }
 
-.navbar .boton{
-    text-decoration: none;
-    padding: 8px;
-    font-weight: 80px;
-    font-size: 20px;
+.navbar button{
+    width: 6rem;
+    height: 3rem;
+    background-color: transparent;
     color: white;
-    background-color: #2E313E;
-    border-radius: 6px;
-    border: 2px solid white;
-   
+    border-color:white;
+    border-radius: 10px;
+    margin-bottom: 40px;
 }
 
-.navbar .enlace{
-    position: absolute;
-    text-decoration: none;
-    padding: 8px;
-    font-weight: 8px;
-    font-size: 20px;
-    color: white;
-    top: 100px;
-    left: 3px;
+.navbar button:hover{
+    cursor: pointer;
 }
-.navbar .enlace2{
-    position: absolute;
-    text-decoration: none;
-    padding: 8px;
-    font-weight: 8px;
-    font-size: 20px;
-    color: white;
-    top: 180px;
-    left: 3px;
+
+.navbar ol{
+    list-style: none;
 }
-/****************************************************/
+
+.navbar ol li{
+    margin-top: 30px;
+    margin-bottom: 40px;
+}
+
+.navbar ol li a{
+    text-decoration: none;
+    color: white;
+}
