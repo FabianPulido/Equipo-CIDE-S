@@ -22,15 +22,12 @@ try {
     window.location= 'DashboardAdmin.php'
 </script>";
        
-    }
-        
-else{
-    
-    echo "<script>
-    alert('Algún campo no es valido');
-    window.location= '../index.html'
-</script>";
-         
+    }else{
+        echo "<script>
+            alert('Algún campo no es valido');
+            window.location= '../index.html'
+            </script>"
+        ;
     }
 
 } catch (PDOEXception $e) {
