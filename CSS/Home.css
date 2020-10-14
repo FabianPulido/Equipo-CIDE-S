@@ -24,7 +24,7 @@ body{
 
 .navbar .options{
     position: absolute;
-    right: 7%;
+    right: 5%;
     margin-top: 50px;
 }
 
@@ -37,7 +37,37 @@ body{
     border-radius: 30px ;
 }
 
-.navbar .options button:hover{
+.navbar .options a{
+    color: white;
+    text-decoration: none;
+}
+
+.navbar .options button:hover {
     background-color: white;
     color: black;
+    cursor: pointer;
+}
+
+.navbar .options a{
+    padding-right: 10px;
+    color: white;
+    text-decoration: none;
+}
+
+/*-------------------Footer False----------------------------------------*/
+.footer-false{
+    width: 450px;
+    height: auto;
+    position: absolute;
+    bottom: 10%;
+    color: white;
+    left: 35%;
+}
+
+.footer-false{
+    text-align: center;
+}
+
+.footer-false .description{
+    font-size: 12px;
 }
