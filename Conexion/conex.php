@@ -1,4 +1,7 @@
 <?php
+
+// Conexión general a la BD
+
 $servername = "localhost";
 $username = "root";
 $password = "";
