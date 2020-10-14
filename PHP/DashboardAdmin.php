@@ -11,7 +11,8 @@
     <!-- Link CSS -->
     <link rel="stylesheet" href="../CSS/diseñado.css">
 
-    <title>Dashboar Admin</title>
+    <title>Dashboard Admin</title>
+
 
   </head>
   <body>
