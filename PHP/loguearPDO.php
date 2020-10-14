@@ -11,9 +11,9 @@ foreach ($stmt as $row) {}
 
 try {
 
-    print $Usuario =$_POST['NombreEmpresa'];
-    print $Pass =$_POST['PasswordEmpresa'];
-    print $email =$_POST['EmailEmpresa'];
+    $Usuario =$_POST['NombreEmpresa'];
+    $Pass =$_POST['PasswordEmpresa'];
+    $email =$_POST['EmailEmpresa'];
 
     if ($Usuario == $row['Nombre_empresa'] AND $email == $row['Correo_emp'] AND $Pass == $row['Contrasena_emp']) {
         
