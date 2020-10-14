@@ -1,9 +1,12 @@
 /** diseño del navbar principal**/
 
+@import url('https://fonts.googleapis.com/css2?family=Salsa&display=swap');
+
 *{
     padding: 0%;
     margin: 0%;
     box-sizing: border-box;
+    font-family: 'Salsa', cursive;
 }
 
 .navbar{
@@ -57,6 +60,7 @@
     font-family: 'calibri';
     color: white;
     box-shadow: 7px 13px 37px #000;
+    display: none;
 }
   
 .form-register h4 {
@@ -101,4 +105,21 @@
     color: white;
     margin: 16px 0;
     font-size: 16px;
+}
+
+/*----------------------------------------------------------------*/
+.show-SS{
+    background-color: blue;
+    width: 570px;
+    height: auto;
+}
+
+.table{
+    position: absolute;
+    left: 15rem;
+    top: 5rem;
+    width: 570px;
+    height: 34px;
+    border-color: black;
+    text-align: center;
 }
