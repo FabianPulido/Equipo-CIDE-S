@@ -17,10 +17,13 @@
 </head>
 <body>
 
+    <!-- Navbar principal -->
     <div class="navbar">
     
         <h1>
-            HackSiigo
+            <a href="../index.html">
+                HackSiigo
+            </a>
         </h1>
 
         <ol>
@@ -28,28 +31,65 @@
                 <a href="#">
                     Soporte
                 </a>
+            </li>
+            <li>
                 <a href="#">
                     Registrarse
                 </a>
-                <a href="#">
+            </li>
+            <li>
+                <p onclick="Login()">
                     Login
-                </a>
+                </p>
             </li>
         </ol>
     </div>
 
-    <div class="aside-left">
+    <!-- Banner central -->
+    <div class="aside-left" id="bann">
         <div class="notice">
-            <h3>
-                Haz parte de nuestro selecto grupo de proveedores, domina el mercado <br> 
-                y haz crecer tu empresa distribuidora
-            </h3>
-            <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum at sit suscipit voluptatem accusamus eius cum, ullam eum, dolorum unde numquam impedit porro reiciendis nulla. Deleniti magni dignissimos possimus unde!
-            </p>
+            <div class="banner">
+                <h3>
+                    ¡Unete Ahora Mismo!
+                </h3>
+            </div>
+            <div class="vertical">
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                    Veritatis ex nesciunt iste voluptatum, consectetur quaerat 
+                    quam sed vel quia accusamus impedit molestiae distinctio 
+                    cupiditate natus esse autem ut reiciendis ab.
+                </p>
+            </div>
         </div>
         <div id="now"></div>
     </div>
     
+
+    <!-- Formulario Registro Proveedores -->
+    <section class="form-register" id="form">
+        
+        <form action="" method="post">
+
+            <h4>Registrar Proveedor</h4>
+
+            <!-- Input NombreSede/Sucursal -->
+            <input class="controls" type="text" name="NombreProveedor" placeholder="Ingrese Nombre">
+    
+            <!-- Input EmailSede/Sucursal -->
+            <input class="controls" type="text" name="EmailProveedor" placeholder="Ingrese Email">
+    
+            <!-- Input PasswordSede/Sucursal -->
+            <input class="controls" type="text" name="PasswordProveedor" placeholder="Ingrese Password">
+
+            <input class="botons" type="submit" value="Registrar">
+
+        </form>
+
+    </section>
+
+    <!-- Scripts Del Projecto -->
+    <script src="../JS/Proveedores/Main.js"></script>
+
 </body>
 </html>
