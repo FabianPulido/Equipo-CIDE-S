@@ -1,0 +1,37 @@
+/**************     Diseño de Formulario     ********************/
+.formulario{
+    position: absolute;
+    background-color:#2E313E;
+    color: white;
+    font-size: 30px;
+    padding: 20px;
+    text-align: center;
+    border-radius: 8px;
+    left: 450px;
+    font-family: cursive;
+
+}
+
+.formulario .boton{
+    text-decoration: none;
+    padding: 2px;
+    font-weight: 80px;
+    font-size: 20px;
+    color: white;
+    background-color: #2E313E;
+    border-radius: 6px;
+    border: 2px solid white;
+    width: 300px;
+    height: 30px;
+}
+.formulario input{
+    border-radius: 8px;
+    background-color:  #2E313E;
+    border: 2px solid white;
+    height: 30px;
+    color: white;
+    font-size: 25px;
+}
+.formulario tr td{
+    padding: 10px;
+}
