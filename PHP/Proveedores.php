@@ -33,12 +33,12 @@
                 </a>
             </li>
             <li>
-                <a href="#">
+                <a onclick="Login()">
                     Registrarse
                 </a>
             </li>
             <li>
-                <p onclick="Login()">
+                <p >
                     Login
                 </p>
             </li>
@@ -69,7 +69,7 @@
     <!-- Formulario Registro Proveedores -->
     <section class="form-register" id="form">
         
-        <form action="" method="post">
+        <form action="FormPro/insertarProveedor.php" method="post">
 
             <h4>Registrar Proveedor</h4>
 
