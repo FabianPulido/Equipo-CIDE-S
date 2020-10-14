@@ -46,7 +46,7 @@
     <!-- Formulario de Login -->
     <section class="form-register" id="form">
         
-        <form action="PHP/loguearPDO.php" method="post">
+        <form action="" method="post">
 
             <h4>Registrar Sede/Sucursal</h4>
 
