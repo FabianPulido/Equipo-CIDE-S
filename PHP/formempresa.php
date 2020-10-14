@@ -18,7 +18,7 @@
   <body>
 <!-- Formulario empresa -->
 
-<div class="contenedor">
+<div class="contenedorr">
     <h2>Crear Empresa</h2>
     <label>Nombre de empresa</label>
     <input type="text" placeholder=".."><br>

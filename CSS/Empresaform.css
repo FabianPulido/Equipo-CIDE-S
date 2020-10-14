@@ -1,4 +1,12 @@
-/*-------------------------- Interfaz de registro empresas  ---------------------------*/
+/*-------------------------- Interfaz de registro  ---------------------------*/
+.contenedorr{
+    background-color:#2E313E;
+    width:30%;
+    height:490px;
+    border-radius:10px;
+    border:2px solid white;
+    font-family: 'Scada', sans-serif;
+}
 label{
     font-size:20px;
     margin-left:5%;
