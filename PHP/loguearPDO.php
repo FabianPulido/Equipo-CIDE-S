@@ -16,7 +16,11 @@ try {
     print $email =$_POST['EmailPassword'];
 
     if ($Usuario == $row['Nombre_empresa'] AND $email == $row['Correo_emp'] AND $Pass == $row['Contrasena_emp']) {
-        print "Acceso permitido";
+        
+        echo "<script>
+    alert('Bienvenid@');
+    window.location= 'DashboardAdmin.php'
+</script>";
        
     }else{
         echo "<script>
