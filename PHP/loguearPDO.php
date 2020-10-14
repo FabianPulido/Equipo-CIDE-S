@@ -18,15 +18,12 @@ try {
     if ($Usuario == $row['Nombre_empresa'] AND $email == $row['Correo_emp'] AND $Pass == $row['Contrasena_emp']) {
         print "Acceso permitido";
        
-    }
-        
-else{
-    
-    echo "<script>
-    alert('Algún campo no es valido');
-    window.location= '../index.html'
-</script>";
-         
+    }else{
+        echo "<script>
+            alert('Algún campo no es valido');
+            window.location= '../index.html'
+            </script>"
+        ;
     }
 
 } catch (PDOEXception $e) {
