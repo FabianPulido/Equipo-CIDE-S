@@ -16,17 +16,34 @@
     <link href="https://fonts.googleapis.com/css2?family=Scada:ital@1&display=swap" rel="stylesheet">
   </head>
   <body>
-<!-- Formulario empresa -->
 
-<div class="contenedor">
-    <h2>Crear Empresa</h2>
-    <label>Nombre de empresa</label>
-    <input type="text" placeholder=".."><br>
-    <label>Correo de empresa</label>
-    <input type="text" placeholder="e-mail.."><br>
-    <label>Contraseña de empresa</label>
-    <input type="text" placeholder=".."><br>
-    <button type="submit"> Guardar Cambios </button>
+    <!-- Formulario empresa -->
+
+  <div class="contenedor">
+    <h2>Factura</h2>
+    <label id="fechat">Fecha </label>
+    <input type="date" id="fecha" placeholder=".." required>
+
+    <label id="factt">Factura No. </label>
+    <input type="number" id="fact" placeholder=".." required>
+
+    <label id="stockt">Stock </label>
+    <input type="number" id="stock" placeholder="?" required>
+
+    <label id="operaciont">Operación </label>
+    <input id="operacion" placeholder=".." required>
+
+    <h3>Detalles de compra</h3>
+
+    <label id="prodt">Producto </label>
+    <input type="text" id="prod" placeholder=".." required>
+
+    <label id="entret">Fecha de entrega </label>
+    <input type="date" id="entre" placeholder=".." required>
+
+    <button type="submit" id="boton">Cargar Factura</button>
+    <button type="submit" id="boton">Confirmar Venta</button>
+    
   </div>
 
 
