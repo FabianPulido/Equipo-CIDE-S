@@ -1,6 +1,6 @@
 <!doctype html>
 <html lang="es">
-  <head>
+<head>
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -13,31 +13,60 @@
 
     <title>Dashboard Admin</title>
 
-  </head>
-  <body>
+</head>
+<body>
 
-        <!-- navbar principal -->
-        <div class="navbar">
+    <!-- navbar principal -->
+    <div class="navbar">
 
-            <a href="">
-                <button>
-                    Perfil
-                </button>
-            </a>
+        <a href="">
+            <button>
+                Perfil
+            </button>
+        </a>
 
-            <ol>
-                <li>
-                    <a href="#">Registrar Sucursal</a>
-                </li>
-                <li>
-                    <a href="#">Administrar Sucursal</a>
-                </li>
-                <li>
-                    <a href="#">Notificaciones</a>
-                </li>
-            </ol>
+        <ol>
+            <li>
+                <a href="#">Registrar Sucursal</a>
+            </li>
+            <li>
+                <a href="#">Administrar Sucursal</a>
+            </li>
+            <li>
+                <a href="#">Notificaciones</a>
+            </li>
+        </ol>
 
-        </div>
+    </div>
+
+    <!-- Formulario registro de Sedes/Sucursales -->
+    <section class="form-register" id="form">
+        
+        <form action="PHP/loguearPDO.php" method="post">
+
+            <h4>Registra una SedeSucursal</h4>
+
+            <!-- Input NombreEmpresa -->
+            <input class="controls" type="text" name="NombreEmpresa" id="NombreEmpresa" placeholder="Ingrese su Nombre">
+    
+            <!-- Input EmailEmpresa -->
+            <input class="controls" type="email" name="EmailEmpresa" id="EmailEmpresa" placeholder="Ingrese su Correo">
+    
+            <!-- Input PasswordEmpresa -->
+            <input class="controls" type="password" name="PasswordEmpresa" id="PasswordEmpresa" placeholder="Ingrese su Contraseña">
+    
+            <p>
+                Estoy de acuerdo con 
+                <a href="#">
+                    Terminos y Condiciones
+                </a>
+            </p>
+            <input class="botons" type="submit" value="Registrar">
+
+        </form>
+
+    </section>
+
 
     <!-- Optional JavaScript; choose one of the two! -->
 
