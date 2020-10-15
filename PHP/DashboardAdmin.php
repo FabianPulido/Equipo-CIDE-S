@@ -100,7 +100,7 @@
               <input type='hidden' value='{$row['Id_Sucursal']}' name='usuario'>
             
               <td>
-                {$row['Nombre_Sucursal']} 
+                {$row['Nombre_sucursal']} 
               </td>
           
               <td>
