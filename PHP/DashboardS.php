@@ -47,7 +47,7 @@
 
 
     <!-- Formulario Factura -->
-
+    <h3>Factura</h3>
 
     <!-- Formulario Notificación -->
     <div class="notify" id="notify">
