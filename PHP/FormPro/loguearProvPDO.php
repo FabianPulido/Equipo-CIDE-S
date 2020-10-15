@@ -1,8 +1,8 @@
 <?php
 
-include 'conex.php';
+include '../conex.php';
     
-$stmt = $conn->prepare("SELECT * FROM proveedor");
+$stmt = $conn->prepare("SELECT * FROM proveedores");
 $stmt->setFetchMode(PDO::FETCH_ASSOC);
 $stmt->execute();
 
