@@ -3,7 +3,7 @@
 include 'cone.php';
 
     $tabla="";
-    $query="SELECT * FROM hackthon.sucursal ORDER BY Id_sucursal";
+    $query="SELECT * FROM hackthon.sucursales ORDER BY Id_sucursal";
 
 
     if(isset($_POST[sucursal])){

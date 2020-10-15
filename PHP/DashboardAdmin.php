@@ -85,7 +85,7 @@
 
       include 'conex.php';
                     
-     $stmt = $conn->prepare("SELECT * FROM sucursal");
+     $stmt = $conn->prepare("SELECT * FROM sucursales");
       // Especificamos el fetch mode antes de llamar a fetch()
      $stmt->setFetchMode(PDO::FETCH_ASSOC);
     // Ejecutamos

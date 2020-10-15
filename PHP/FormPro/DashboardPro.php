@@ -55,6 +55,8 @@
             <input class="controls" type="text" name="Stockmin" placeholder="Ingrese Minimo de Stock Producto">
             <!-- Input IVA del producto -->
             <input class="controls" type="text" name="ivaprod" placeholder="Ingrese IVA Producto">
+            <!-- Input IVA del producto -->
+            <input class="controls" type="text" name="Proveedor" placeholder="Ingrese proveedor">
             
             <input class="botons" type="submit" value="Registrar">
 

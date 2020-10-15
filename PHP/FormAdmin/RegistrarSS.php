@@ -7,7 +7,7 @@
     $password = $_POST['PasswordSede'];
 
 
-    $stmt = $conn->prepare("INSERT INTO hackathon.sucursal
+    $stmt = $conn->prepare("INSERT INTO hackathon.sucursales
         (Nombre_sucursal, Direccion_sucursal, Telefono_sucursal)
         VALUES 
         (?,?,?)
