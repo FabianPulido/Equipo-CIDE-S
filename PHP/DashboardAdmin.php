@@ -9,7 +9,7 @@
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
 
   <!-- Link CSS -->
-  <link rel="stylesheet" href="../CSS/DashboardA.css">
+  <link rel="stylesheet" href="../CSS/Admin/Admin.css">
 
   <title>Dashboard Admin</title>
 
@@ -24,7 +24,7 @@
     </a>
     <ol>
       <li>
-        <p>
+        <p onclick="Register()">
           Nueva Sucursal
         </p>
       </li>
@@ -60,12 +60,31 @@
       <!-- Input PasswordSede/Sucursal -->
       <input class="controls" type="text" name="PasswordSede" placeholder="Ingrese Telefono Sede/Sucursal">
 
+      <!-- Input PasswordSede/Sucursal -->
+      <select name="" id="">
+        <option value=""></option>
+        <?
+          require('/FormAdmin/Select.php');
+
+          foreach ($stmt as $row) {
+        
+        ?>
+        <option value="">
+          <?php
+            print $row['Id_Empresa'];
+          ?>
+        </option>
+        <?
+          }
+        ?>
+      </select>
+
       <input class="botons" type="submit" value="Registrar">
     </form>
   </section>
 
   <!-- Tabla para mostrar las sucursales -->
-  <div class="show-SS">
+  <div class="show-SS" id="Sucursales">
     <table class="table table-dark">
       <thead>
         <tr>
@@ -91,7 +110,7 @@
             {$row['Id_Sucursal']} </th>
           
             <td>
-            {$row['Nombre_sucursal']} </td>
+            {$row['Nombre_Sucursal']} </td>
           
             <td>
             {$row['Direccion_Sucursal']} </td>
@@ -110,6 +129,7 @@
   </div>
     
   <!-- Optional JavaScript; choose one of the two! -->
+  <script src="../JS/Admin/Admin.js"></script>
 
   <!-- Option 1: jQuery and Bootstrap Bundle (includes Popper) -->
   <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>

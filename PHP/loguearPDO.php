@@ -1,6 +1,6 @@
 <?php
 
-include 'conex.php';
+include 'Connect/conex.php';
     
 $stmt = $conn->prepare("SELECT * FROM empresas");
 $stmt->setFetchMode(PDO::FETCH_ASSOC);

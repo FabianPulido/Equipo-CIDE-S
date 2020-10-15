@@ -38,8 +38,13 @@
     margin: 2rem;
     margin-bottom: 4rem;
 }
+
+.navbar-admin ol li p{
+    cursor: pointer;
+}
 /*--------------------------------------------------*/
 .form-register {
+    position: absolute;
     width: 400px;
     background: #24303c;
     padding: 30px;
