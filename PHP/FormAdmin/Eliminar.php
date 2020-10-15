@@ -2,7 +2,7 @@
 
 // Eliminar el dato de la lista
 
-include 'conex.php';    
+include '../conex.php';    
     $ID=$_POST['usuario'];
 
 
@@ -16,7 +16,7 @@ try {
   $conn->exec($sql);
   echo "<script>
         alert('Sucursal Eliminada!');
-        window.location= 'DashboardAdmin.php'
+        window.location= '../DashboardAdmin.php'
     </script>";
 } catch(PDOException $e) {
   echo $sql . "<br>" . $e->getMessage();

@@ -2,11 +2,10 @@
     
     include '../conex.php';
 
-    $nombre = "empresa";
+    $nombre = $_POST['NombreSede'];
     $email = $_POST['EmailSede'];
     $password = $_POST['PasswordSede'];
-    $empresa = "1";
-
+    $empresa = $_POST['Id_Empresa'];
 
     $stmt = $conn->prepare("INSERT INTO hackathon.sucursales
         (Nombre_Sucursal, Direccion_Sucursal, Telefono_Sucursal, Id_Empresa)

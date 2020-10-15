@@ -12,11 +12,12 @@
 /*--------------------------------------------------*/
 
 .navbar-admin{
-    position: absolute;
-    width: 16%;
-    height: 43.4rem;
+    position: fixed;
+    bottom: 0%;
+    width: 100%;
+    height: 120px;
     background-color: rgb(57, 57, 77);
-    border-radius: 0px 10px 10px 0px;
+    border-radius: 10px 10px 0px 0px;
 }
 
 .navbar-admin a{
@@ -29,32 +30,44 @@
 }
 
 .navbar-admin ol{
-    margin-top: 8rem;
+    position: fixed;
+    right: 2rem;
+    margin-top: 1rem;
     list-style: none;
     color: white;
+    display: flex;
 }
 
 .navbar-admin ol li{
     margin: 2rem;
+    margin-right: 10rem;
     margin-bottom: 4rem;
 }
 
 .navbar-admin ol li p{
     cursor: pointer;
 }
+
+.navbar-admin .close{
+    margin: 1rem;
+    margin-left: 75rem;
+}
+
+.navbar-admin .close:hover{
+    color: white;
+}
 /*--------------------------------------------------*/
 .form-register {
     position: absolute;
     width: 400px;
-    background: #24303c;
+    background: #2a3641;
     padding: 30px;
-    margin-left: 37%;
-    margin-top: 10rem;
+    right: 4rem;
+    margin-top: 1.5rem;
     border-radius: 10px;
     font-family: 'calibri';
     color: white;
     box-shadow: 7px 13px 37px #000;
-    display: none;
 }
   
 .form-register h4 {
@@ -101,36 +114,12 @@
     font-size: 16px;
 }
 
-/*----------------------------------------------------------------*/
-.show-SS{
-    position: absolute;
-    left: 15rem;
-    top: 5rem;
-    width: 570px;
-    height: 200px;
-    overflow-y: auto;
+.form-register form select option{
+    width: 200px;
+    color: black;
 }
 
-.table{
-    width: 570px;
-    height: 34px;
-    border-color: black;
-    text-align: center;
-}
-
-/* Botones del listar sucursales */
-
-#botoneditar{
-    background-color:green;
-    border:2px solid white;
-    color:white;
-    border-radius:10px;
-    width:48%;
-}
-#botonborrar{
-    background-color:red;
-    border:2px solid white;
-    color:white;
-    border-radius:10px;
-    width:48%;
+/*--------------------Tabla de sucursales--------------------------*/
+.tabla-sucursales .right{
+    float: right;
 }

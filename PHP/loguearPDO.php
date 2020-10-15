@@ -1,6 +1,6 @@
 <?php
 
-include 'Connect/conex.php';
+include 'conex.php';
     
 $stmt = $conn->prepare("SELECT * FROM empresas");
 $stmt->setFetchMode(PDO::FETCH_ASSOC);
@@ -11,9 +11,9 @@ foreach ($stmt as $row) {}
 
 try {
 
-    $Usuario =$_POST['NombreEmpresa'];
-    $Pass =$_POST['PasswordEmpresa'];
-    $email =$_POST['EmailEmpresa'];
+    $Usuario = $_POST['NombreEmpresa'];
+    $Pass = $_POST['PasswordEmpresa'];
+    $email = $_POST['EmailEmpresa'];
 
     if ($Usuario == $row['Nombre_Empresa'] AND $email == $row['Correo_Empresa'] AND $Pass == $row['Password_Empresa']) {
         
