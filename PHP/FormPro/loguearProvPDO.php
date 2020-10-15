@@ -1,8 +1,8 @@
 <?php
 
-include 'conex.php';
+include '../conex.php';
     
-$stmt = $conn->prepare("SELECT * FROM proveedor");
+$stmt = $conn->prepare("SELECT * FROM proveedores");
 $stmt->setFetchMode(PDO::FETCH_ASSOC);
 $stmt->execute();
 
@@ -15,7 +15,7 @@ try {
     $Pass =$_POST['PasswordProveedor'];
     $email =$_POST['EmailProveedor'];
 
-    if ($Usuario == $row['Nombre'] AND $email == $row['Correo_proveedor'] AND $Pass == $row['Password_proveedor']) {
+    if ($Usuario == $row['Nombre_Proveedor'] AND $email == $row['Correo_Proveedor'] AND $Pass == $row['Password_Proveedor']) {
         
         echo "<script>
     alert('Bienvenid@');
@@ -25,7 +25,7 @@ try {
     }else{
         echo "<script>
             alert('Algún campo no es valido');
-            window.location= '../index.html'
+            window.location= 'DashboardPro.php'
             </script>"
         ;
     }
