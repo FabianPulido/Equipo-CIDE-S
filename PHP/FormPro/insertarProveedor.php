@@ -1,6 +1,6 @@
 <?php
 
-include 'conex.php';
+include '../conex.php';
 
 $correo = $_POST['EmailProveedor'];
 $pclave = $_POST['PasswordProveedor'];
