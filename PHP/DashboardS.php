@@ -193,7 +193,7 @@
                 <tbody>
                     <?php
                     include 'conex.php';
-                    $stmt = $conn->prepare("SELECT * FROM inventaerio WHERE Id_Sucursal = 3");
+                    $stmt = $conn->prepare("SELECT * FROM inventaerio WHERE Id_Sucursal = 8");
                     // Especificamos el fetch mode antes de llamar a fetch()
                     $stmt->setFetchMode(PDO::FETCH_ASSOC);
                     // Ejecutamos
