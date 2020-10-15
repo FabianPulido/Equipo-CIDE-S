@@ -56,6 +56,10 @@
 .navbar-admin .close:hover{
     color: white;
 }
+.navbar-admin .redireccion{
+    position: absolute;
+    left: 300px;
+}
 /*--------------------------------------------------*/
 .form-register {
     position: absolute;
