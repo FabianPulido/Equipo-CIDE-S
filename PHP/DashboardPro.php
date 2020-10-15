@@ -42,7 +42,7 @@
         <!-- Formulario de registro -->
         <section class="form-register" id="form">
         
-        <form action="CreateProdcut.php" method="post">
+        <form action="FormPro/CreateProdcut.php" method="post">
 
             <h4>Registrar Producto</h4>
 
@@ -56,9 +56,8 @@
             <input class="controls" type="text" name="Valorprod" placeholder="Ingrese Valor Producto">
             <!-- Input Stock minimo del producto -->
             <input class="controls" type="text" name="Stockmin" placeholder="Ingrese Minimo de Stock Producto">
-            <!-- Input IVA del producto -->
-            <input class="controls" type="text" name="ivaprod" placeholder="Ingrese IVA Producto">
-            <!-- Input IVA del producto -->
+          
+            <!-- Input proveedor del producto -->
             <input class="controls" type="text" name="Proveedor" placeholder="Ingrese proveedor">
             
             <input class="botons" type="submit" value="Validar">
