@@ -2,16 +2,21 @@
     padding: 0%;
     margin: 0%;
     box-sizing: border-box;
+    font-family: 'Salsa', cursive;
 }
+
+@import url('https://fonts.googleapis.com/css2?family=Salsa&display=swap');
 
 /*---------------------------------------------------*/
 
 .navbar-SS{
-    width: 12rem;
-    height: 43.5em;
+    position: fixed;
+    bottom: 0px;
+    width: 100%;
+    height: 120px;
     background-color: rgb(57, 57, 77);
     color: white;
-    border-radius: 0px 10px 10px 0px;
+    border-radius: 10px 10px 0px 0px;
 }
 
 .navbar-SS a{
@@ -19,7 +24,7 @@
     color: white;
     text-decoration: none;
     font-size: 24px;
-    top: 2rem;
+    top: 2.5rem;
     left: 2rem;
     bottom: 2rem;
 }
@@ -37,11 +42,15 @@
 
 .navbar-SS ol{
     list-style: none;
-    margin: 6rem 2rem 2rem 2rem;
+    position: absolute;
+    top: -2rem;
+    right: 2rem;
+    display: flex;
 }
 
 .navbar-SS ol li{
     margin-top: 5rem;
+    margin-right: 3rem;
 }
 
 .navbar-SS ol li p{
@@ -52,7 +61,7 @@
 .contenedor{
     position: absolute;
     top: 2rem;
-    left: 15rem;
+    left: 5rem;
     width: 750px;
     height: 290px;
     background-color: #353A40;
@@ -85,7 +94,7 @@
 .contenedor form input{
     background-color: transparent;
     border: none;
-    border-bottom: 3px solid white;
+    border-bottom: 1px solid white;
     color: white;
     text-align: center;
 }
@@ -103,8 +112,8 @@
 /*-------------------Formulario Notificación---------------------------------*/
 .notify{
     position: absolute;
-    top: 7rem;
-    left: 20rem;
+    top: 4rem;
+    left: 5rem;
     width: 500px;
     border-radius: 20px;
     background-color:  #353A40;
@@ -127,4 +136,39 @@
     right: 5rem;
     top: 2rem;
     width: 10rem;
+}
+
+/*----------------------------------------Aside-center-----------------------------------------------*/
+.aside-center{
+    position: absolute;
+    left: 1%;
+    top: 1rem;
+    width: 65%;
+    height: 80%;
+    border: 2px solid rgb(57, 57, 77);
+    border-radius: 5px;
+}
+
+.aside-right{
+    position: absolute;
+    right: 1%;
+    top: 1rem;
+    width: 30%;
+    height: 80%;
+    border: 2px solid rgb(57, 57, 77);
+    border-radius: 5px;
+}
+
+/*------------------------------Inventario---------------------------------------*/
+.inventario{
+    position: absolute;
+    top: 1.5rem;
+    left: 2.5rem;
+    width: 400px;
+    height: 470px;
+    background-color: rgb(57, 57, 77);
+    padding: 2rem;
+    color: white;
+    border-radius: 10px;
+    display: none;
 }

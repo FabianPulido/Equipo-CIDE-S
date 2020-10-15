@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
     <!-- Project CSS -->
-    <link rel="stylesheet" href="../CSS/DashboardS.css">
+    <link rel="stylesheet" href="../CSS/Sedes/DashboardS.css">
 
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
@@ -24,6 +24,15 @@
         </a>
 
         <ol>
+            <li>
+                <p onclick="Stock()">
+                    Inventario
+                    <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-layers" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd" d="M3.188 8L.264 9.559a.5.5 0 0 0 0 .882l7.5 4a.5.5 0 0 0 .47 0l7.5-4a.5.5 0 0 0 0-.882L12.813 8l-1.063.567L14.438 10 8 13.433 1.562 10 4.25 8.567 3.187 8z"/>
+                        <path fill-rule="evenodd" d="M7.765 1.559a.5.5 0 0 1 .47 0l7.5 4a.5.5 0 0 1 0 .882l-7.5 4a.5.5 0 0 1-.47 0l-7.5-4a.5.5 0 0 1 0-.882l7.5-4zM1.563 6L8 9.433 14.438 6 8 2.567 1.562 6z"/>
+                    </svg>
+                </p>
+            </li>
             <li>
                 <p onclick="fact()">
                     Nueva factura
@@ -113,7 +122,6 @@
         </form>
     </div>
 
-
     <!-- Tabla para visualizar la cola de factura -->
     <div class="cola-fac">
 
@@ -138,6 +146,64 @@
                 </tr>
             </tbody>
         </table>
+
+    </div>
+
+
+    <div class="aside-center">
+
+        <!-- Formulario Inventario -->
+        <div class="inventario" id="inv">
+            <form action="" method="POST">
+                <h5>
+                    Inventario
+                </h5>
+                <div class="form-group">
+                    <label for="disabledTextInput">Sucursal</label>
+                    <input type="text" class="form-control" placeholder="Sucursal">
+                </div>
+                <div class="form-group">
+                    <label for="disabledSelect">Producto</label>
+                    <input type="text"  class="form-control" placeholder="Nombre producto">
+                </div>
+                <div class="form-group">
+                    <label for="disabledSelect">Precio</label>
+                    <input type="text"  class="form-control" placeholder="Precio producto">
+                </div>
+                <div class="form-group">
+                    <label for="disabledSelect">Cantidad</label>
+                    <input type="text"  class="form-control" placeholder="Cantidad producto">
+                </div>
+                <button type="submit" class="btn btn-primary w-100">
+                    Enviar notificación
+                </button>
+            </form>
+        </div>
+
+        <div class="table-inventario">
+            <table class="table">
+                <thead>
+                    <tr>
+                    <th scope="col">#</th>
+                    <th scope="col">Nombre</th>
+                    <th scope="col">Valor</th>
+                    <th scope="col">Cantidad</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <th scope="row"></th>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+    </div>
+
+    <div class="aside-right">
 
     </div>
 
