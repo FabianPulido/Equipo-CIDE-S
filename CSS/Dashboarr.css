@@ -145,3 +145,21 @@
     border-radius:10px;
     width:48%;
 }
+.imagensucur{
+    position:absolute;
+    width:400px;
+    height:300px;
+    background-color:red;
+    border:5px solid #24303c;
+    box-shadow:5px 10px 5px white;
+    margin-left:10%;
+    margin-top:2%;
+}
+.contenedor_imagen{
+    position:fixed;
+    margin-top:5.9%;
+    margin-left:64%;
+    background-color:#353A40;
+    width:480px;
+    height:400px;
+}
