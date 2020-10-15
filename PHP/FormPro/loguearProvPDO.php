@@ -25,7 +25,7 @@ try {
     }else{
         echo "<script>
             alert('Algún campo no es valido');
-            window.location= 'DashboardPro.php'
+            window.location= '../Proveedores.php'
             </script>"
         ;
     }
