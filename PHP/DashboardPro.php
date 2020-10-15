@@ -73,19 +73,17 @@
     <table class="table table-dark" >
       <thead>
         <tr>
-          <th scope="col">ID Producto</th>
-          <th scope="col">Nombre</th>
-          <th scope="col">Stock</th>
-          <th scope="col">Valor</th>
-          <th scope="col">Stock Min.</th>
-          <th scope="col">Proveedor</th>
-          <th scope="col">Proceso</th>
+          <th scope="col">ID</th>
+          <th scope="col">sucursal</th>
+          <th scope="col">proveedor</th>
+          <th scope="col">producto</th>
+          <th scope="col">cantidad</th>
         </tr>
       </thead>
       <tbody>
         <?php
           require 'conex.php';
-          $stmt = $conn->prepare("SELECT * FROM productos Join proveedores");
+          $stmt = $conn->prepare("SELECT * FROM hackathon.notificaciones");
           // Especificamos el fetch mode antes de llamar a fetch()
           $stmt->setFetchMode(PDO::FETCH_ASSOC);
           // Ejecutamos
@@ -93,32 +91,29 @@
           // Mostramos los resultados
           while ($row = $stmt->fetch()){
             echo "<tr>
-            <form action='FormPro/EliminarProd.php' method='POST'>
+            <form action='' method='POST'>
               <th scope='row'>
-                {$row['Id_Producto']} 
+                {$row['Id_Notificacion']} 
               </th>
-              <input type='hidden' value='{$row['Id_Producto']}' name='producto'>
+              <input type='hidden' value='{$row['Id_Sucursal']}' name=''>
             
               <td>
-                {$row['Nombre_Producto']} 
+                {$row['Id_Sucursal']} 
               </td>
           
               <td>
-                {$row['Stcok_Producto']} 
+                {$row['Id_Proveedor']} 
               </td>
             
               <td>
-                {$row['Valor_Producto']}$
+                {$row['Nombre_Producto']}$
               </td>
               <td>
-                {$row['StockPro_MIn']}
-              </td>
-              <td>
-                {$row['Nombre_Proveedor']}
+                {$row['Cantidad_Producto']}
               </td>
               
               <td>
-                <button type='submit' name='botonborrar' id='botonborrar' class='btn btn-outline-primary'>Borrar</button>
+                <button type='submit' class='btn btn-outline-primary'>Responder</button>
               </td>
 
             </form>

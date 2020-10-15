@@ -18,7 +18,6 @@
     foreach ($stmt as $row) {
         if ($row['Cantidad_Producto'] <= "10") {
             
-            print $mensaje . "<br>";
             $pos = $conn->prepare("INSERT INTO notificaciones (Nombre_Notificacion, Id_Sucursal, Id_Proveedor, Nombre_Producto, Cantidad_Producto) 
                 VALUES (?,?,?,?,?)
             ");
