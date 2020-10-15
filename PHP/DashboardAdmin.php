@@ -11,6 +11,7 @@
   <!-- Link CSS -->
   <link rel="stylesheet" href="../CSS/Admin/index.css">
   <link rel="stylesheet" href="../CSS/Admin/Sucursal.css">
+  
 
   <title>Dashboard Admin</title>
 
@@ -30,6 +31,58 @@
     </div>
   </div>
 
+<<<<<<< HEAD
+  
+  <!-- Formulario de Registrar Sucursal -->
+  <section class="form-register" id="form">
+    <form action="FormAdmin/RegistrarSS.php" method="post">
+      <h4>Registrar Sede/Sucursal</h4>
+
+      <!-- Input NombreSede/Sucursal -->
+      <input class="controls" type="text" name="NombreSede" placeholder="Ingrese Nombre Sede/Sucursal">
+
+      <!-- Input EmailSede/Sucursal -->
+      <input class="controls" type="text" name="EmailSede" placeholder="Ingrese Direccion Sede/Sucursal">
+
+      <!-- Input PasswordSede/Sucursal -->
+      <input class="controls" type="text" name="PasswordSede" placeholder="Ingrese Telefono Sede/Sucursal">
+
+      <!-- Input Id_Empresa -->
+      <input class="controls" type="text" name="Id_Empresa" placeholder="Ingrese Id Empresa">
+
+
+      <input class="botons" type="submit" value="Registrar">
+    </form>
+  </section>
+    
+
+  <!-- Tabla para mostrar las sucursales -->   
+  <section class="principal2">
+
+      <h1>BUSQUEDA DE SUCURSALES</h1>
+
+        <div class="formularioaj">
+            <label for="caja_busqueda">Buscar</label>
+                <input type="text" name="caja_busqueda" id="caja_busqueda" class="cajita"></input>
+
+  
+        </div>
+
+        <div id="datos" class=""></div>
+
+
+  </section>
+  
+
+  <!-- Formulario ingreso sucursal -->
+    <!-- Formulario de Registrar Sucursal -->
+    <section class="form-sucursal" id="sucursal">
+    <form action="FormAdmin/ingresarSucursal.php" method="post">
+      <h4>Ingresar Sede/Sucursal</h4>
+
+      <!-- Input NombreSede/Sucursal -->
+      <input class="controls" type="text" name="NombreSede" placeholder="Ingrese Nombre Sede/Sucursal">
+=======
   <div class="tablero-trabajo">
 
     <div class="form-login-sucursal">
@@ -129,10 +182,12 @@
         </table>
       </div>
     </div>
+>>>>>>> 1e1bc41a26917f6255dd4b11eec439d3d271cc1c
 
   </div>
 
   <script src="../JS/Admin/Admin.js"></script>
-
+  <script type="text/javascript" src="../JS/jquery.min.js"></script>
+  <script type="text/javascript" src="../JS/main2.js"></script>
 </body>
 </html>

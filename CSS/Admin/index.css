@@ -104,6 +104,11 @@
     color: black;
 }
 
+<<<<<<< HEAD:CSS/Admin/Main.css
+/** FORMULARIO DE BUSQUEDA **/
+
+
+=======
 /*---------------------------------------------*/
 .tablero-trabajo{
     position: absolute;
@@ -114,3 +119,4 @@
     background-color: rgb(57, 57, 77);
     border-radius: 7px;
 }
+>>>>>>> 1e1bc41a26917f6255dd4b11eec439d3d271cc1c:CSS/Admin/index.css
