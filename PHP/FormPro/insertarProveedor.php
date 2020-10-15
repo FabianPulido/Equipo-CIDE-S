@@ -19,6 +19,6 @@ $stmt->bindParam(3, $pclave);
 $stmt->execute();
 echo "<script>
     alert('Proveedor Registrado!!, Bienvenid@');
-    window.location= 'DashboardPro.php'
+    window.location= '../DashboardPro.php'
 </script>";
 ?>

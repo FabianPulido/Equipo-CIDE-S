@@ -10,6 +10,7 @@
 
   <!-- Link CSS -->
   <link rel="stylesheet" href="../CSS/Admin/Main.css">
+  <link rel="stylesheet" href="../CSS/Admin/Sucursal.css">
 
   <title>Dashboard Admin</title>
 
@@ -90,6 +91,7 @@
           $stmt->execute();
           // Mostramos los resultados
           while ($row = $stmt->fetch()){
+
             echo "<tr>
             <form action='FormAdmin/Eliminar.php' method='POST'>
               <th scope='row'>
@@ -111,6 +113,7 @@
               
               <td>
                 <button type='submit' name='botonborrar' id='botonborrar' class='btn btn-outline-primary'>Borrar</button>
+                <p class='btn btn-outline-primary' onclick='go()' >Ingresar</p>
               </td>
 
             </form>
@@ -120,6 +123,23 @@
       </tbody>
     </table>
   </div>
+
+  <!-- Formulario ingreso sucursal -->
+    <!-- Formulario de Registrar Sucursal -->
+    <section class="form-sucursal" id="sucursal">
+    <form action="FormAdmin/ingresarSucursal.php" method="post">
+      <h4>Ingresar Sede/Sucursal</h4>
+
+      <!-- Input NombreSede/Sucursal -->
+      <input class="controls" type="text" name="NombreSede" placeholder="Ingrese Nombre Sede/Sucursal">
+
+      <!-- Input EmailSede/Sucursal -->
+      <input class="controls" type="text" name="TelefonoSede" placeholder="Ingrese Telefono Sede/Sucursal">
+
+
+      <input class="botons" type="submit" value="Ingresar">
+    </form>
+  </section>
 
   <script src="../JS/Admin/Admin.js"></script>
 

@@ -1,5 +1,5 @@
 <?php
-    
+
     include '../conex.php';
 
     $nombre = $_POST['NombreSede'];

@@ -19,7 +19,7 @@ try {
         
         echo "<script>
     alert('Bienvenid@');
-    window.location= 'DashboardPro.php'
+    window.location= '../DashboardPro.php'
 </script>";
        
     }else{
