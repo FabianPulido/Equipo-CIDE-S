@@ -1,8 +1,3 @@
-<?php
-    session_start();
-    $id = $_SESSION['id'];
-    //print $_SESSION['id'];
-?>
 <!doctype html>
 <html lang="en">
 <head>
@@ -198,7 +193,8 @@
                 <tbody>
                     <?php
                     include 'conex.php';
-                    $stmt = $conn->prepare("SELECT * FROM inventaerio WHERE Id_Sucursal = '8' ");
+                    include 'StockMIn.php';
+                    $stmt = $conn->prepare("SELECT * FROM inventaerio WHERE Id_Sucursal = '10' ");
                     // Especificamos el fetch mode antes de llamar a fetch()
                     $stmt->setFetchMode(PDO::FETCH_ASSOC);
                     // Ejecutamos
