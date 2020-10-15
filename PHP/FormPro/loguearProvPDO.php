@@ -19,13 +19,13 @@ try {
         
         echo "<script>
     alert('Bienvenid@');
-    window.location= 'DashboardPro.php'
+    window.location= '../DashboardPro.php'
 </script>";
        
     }else{
         echo "<script>
             alert('Algún campo no es valido');
-            window.location= 'DashboardPro.php'
+            window.location= '../Proveedores.php'
             </script>"
         ;
     }

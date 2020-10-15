@@ -89,7 +89,12 @@
           // Ejecutamos
           $stmt->execute();
           // Mostramos los resultados
+          session_start();
           while ($row = $stmt->fetch()){
+
+            $_SESSION['id'] = $row['Id_Sucursal'];
+            //print $_SESSION['id'];
+
             echo "<tr>
             <form action='FormAdmin/Eliminar.php' method='POST'>
               <th scope='row'>
