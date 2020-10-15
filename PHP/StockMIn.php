@@ -3,7 +3,7 @@
     include 'conex.php';
 
 
-    $stmt = $conn->prepare("SELECT Cantidad_Producto FROM hackathon.inventaerio WHERE Id_Sucursal = 3");
+    $stmt = $conn->prepare("SELECT Cantidad_Producto FROM hackathon.inventaerio WHERE Id_Sucursal = 8");
     $stmt->setFetchMode(PDO::FETCH_ASSOC);
     $stmt->execute();
 
