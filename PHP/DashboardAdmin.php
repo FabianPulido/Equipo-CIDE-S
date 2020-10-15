@@ -69,7 +69,7 @@
       
     <table class="table table-dark" >
   <thead>
-  <th scope="col"><input type="text"></th>
+  
     <tr>
       <th scope="col">ID</th>
       <th scope="col">Nombre</th>
@@ -79,40 +79,12 @@
     </tr>
   </thead>
   <tbody>
-  
-    <?php
-                    
+    <section>
+        <input type="text" name="" id="busqueda">
+    </section>
 
-      include 'conex.php';
-                    
-     $stmt = $conn->prepare("SELECT * FROM sucursal");
-      // Especificamos el fetch mode antes de llamar a fetch()
-     $stmt->setFetchMode(PDO::FETCH_ASSOC);
-    // Ejecutamos
-      $stmt->execute();
-      // Mostramos los resultados
-       while ($row = $stmt->fetch()){
-        echo "<tr>
-        <th scope='row'>
-        {$row['Id_sucursal']} </th>
-        
-        <td>
-        {$row['Nombre_sucursal']} </td>
-       
-        <td>
-        {$row['Direccion_sucursal']} </td>
-        
-        <td>
-        {$row['Telefono_sucursal']}</td>
-        <td>
-        <button type='submit' id='botoneditar'>Editar</button>
-        <a href='eliminar.php?=echo Id_sucursal{row['Id_sucursal']' id='botonborrar'>Borrar</a>
-        </td>
-        </tr>";
-        }
-                    
-                  
-   ?>
+    <section id="tabla_resultado"></section>
+
   </tbody>
 </table>
   
@@ -122,6 +94,7 @@
         <img src="../ASSETS/imagensucursales.jpg" width=100% height=100%;>
       </div>
       </div>
+    <script src="JS/peticion.js">
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
