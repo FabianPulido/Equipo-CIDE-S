@@ -11,9 +11,13 @@ foreach ($stmt as $row) {}
 
 try {
 
+    session_start();
+
     $Usuario =$_POST['NombreProveedor'];
     $Pass =$_POST['PasswordProveedor'];
     $email =$_POST['EmailProveedor'];
+    
+    $_SESSION['Nombre'] = $Usuario;
 
     if ($Usuario == $row['Nombre_Proveedor'] AND $email == $row['Correo_Proveedor'] AND $Pass == $row['Password_Proveedor']) {
         

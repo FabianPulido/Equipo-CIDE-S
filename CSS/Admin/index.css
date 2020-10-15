@@ -12,12 +12,13 @@
 /*--------------------------------------------------*/
 
 .navbar-admin{
-    position: fixed;
-    bottom: 0%;
+    position: absolute;
+    top: 0%;
     width: 100%;
     height: 120px;
     background-color: rgb(57, 57, 77);
-    border-radius: 10px 10px 0px 0px;
+    border-radius: 0px 0px 10px 10px;
+    display: flex;
 }
 
 .navbar-admin a{
@@ -29,36 +30,16 @@
     text-decoration: none;
 }
 
-.navbar-admin ol{
-    position: fixed;
-    right: 2rem;
-    margin-top: 1rem;
-    list-style: none;
-    color: white;
-    display: flex;
-}
-
-.navbar-admin ol li{
-    margin: 2rem;
-    margin-right: 10rem;
-    margin-bottom: 4rem;
-}
-
-.navbar-admin ol li p{
-    cursor: pointer;
-}
-
-.navbar-admin .close{
-    margin: 1rem;
-    margin-left: 75rem;
-}
-
-.navbar-admin .close:hover{
-    color: white;
-}
-.navbar-admin .redireccion{
+.navbar-admin .nav{
     position: absolute;
-    left: 300px;
+    right: 10rem;
+}
+
+.navbar-admin ol{
+    position: absolute;
+    color: white;
+    list-style: none;
+    display: flex;
 }
 /*--------------------------------------------------*/
 .form-register {
@@ -123,6 +104,19 @@
     color: black;
 }
 
+<<<<<<< HEAD:CSS/Admin/Main.css
 /** FORMULARIO DE BUSQUEDA **/
 
 
+=======
+/*---------------------------------------------*/
+.tablero-trabajo{
+    position: absolute;
+    top: 9rem;
+    left: 4.5rem;
+    width: 90%;
+    height: 500px;
+    background-color: rgb(57, 57, 77);
+    border-radius: 7px;
+}
+>>>>>>> 1e1bc41a26917f6255dd4b11eec439d3d271cc1c:CSS/Admin/index.css

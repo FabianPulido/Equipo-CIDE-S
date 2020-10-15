@@ -8,7 +8,6 @@ include '../conex.php';
 
 try {
  
-
   // sql to delete a record
   $sql = "DELETE FROM productos WHERE Id_Producto='$ID'";
 
@@ -16,7 +15,7 @@ try {
   $conn->exec($sql);
   echo "<script>
         alert('Sucursal Eliminada!');
-        window.location= '../DashboardPro.php'
+        window.location= '../DashboardAdmin.php'
     </script>";
 } catch(PDOException $e) {
   echo $sql . "<br>" . $e->getMessage();
