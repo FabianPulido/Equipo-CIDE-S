@@ -9,35 +9,51 @@
     font-family: 'Salsa', cursive;
 }
 
-/*--------------------------------------------------*/
-
-.navbar-admin{
+.navbar{
     position: absolute;
-    width: 16%;
-    height: 43.4rem;
-    background-color: rgb(57, 57, 77);
-    border-radius: 0px 10px 10px 0px;
+    background-color:#545661;
+    height: 43.5rem;
+    left: 0px;
+    top: 0px;
+    width: 10%;
+    color: cornsilk;
+    padding: 20px;
+
 }
 
-.navbar-admin a{
-    position: absolute;
-    font-size: 30px;
-    top: 2rem;
-    left: 2rem;
+.navbar button{
+    width: 6rem;
+    height: 3rem;
+    background-color: transparent;
     color: white;
-    text-decoration: none;
+    border-color:white;
+    border-radius: 10px;
+    margin-top: -70px;
+    margin-bottom: 40px;
 }
 
-.navbar-admin ol{
-    margin-top: 8rem;
+.navbar button:hover{
+    cursor: pointer;
+}
+
+.navbar ol{
     list-style: none;
+}
+
+.navbar ol li{
+    margin-top: 30px;
+    margin-bottom: 40px;
+}
+
+.navbar ol li a{
+    text-decoration: none;
     color: white;
 }
 
-.navbar-admin ol li{
-    margin: 2rem;
-    margin-bottom: 4rem;
+.navbar ol li #Rp{
+    cursor: pointer;
 }
+
 /*--------------------------------------------------*/
 .form-register {
     width: 400px;

@@ -45,9 +45,7 @@
     </ol>
   </div>
 
-
-
-
+  
   <!-- Formulario de Registrar Sucursal -->
   <section class="form-register" id="form">
     <form action="FormAdmin/RegistrarSS.php" method="post">
@@ -110,7 +108,6 @@
       </tbody>
     </table>
   </div>
-
     
   <!-- Optional JavaScript; choose one of the two! -->
 
