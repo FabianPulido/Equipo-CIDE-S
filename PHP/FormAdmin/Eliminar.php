@@ -16,7 +16,7 @@ try {
   $conn->exec($sql);
   echo "<script>
         alert('Sucursal Eliminada!');
-        window.location= '../DashboardPro.php'
+        window.location= '../DashboardAdmin.php'
     </script>";
 } catch(PDOException $e) {
   echo $sql . "<br>" . $e->getMessage();
