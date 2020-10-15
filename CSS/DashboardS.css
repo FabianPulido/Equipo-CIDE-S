@@ -24,6 +24,12 @@
     bottom: 2rem;
 }
 
+.navbar-SS .close{
+    position: absolute;
+    top: 40rem;
+    font-size: 20px;
+}
+
 .navbar-SS a:hover{
     color: white;
     text-decoration: none;
@@ -43,6 +49,56 @@
 }
 
 /*-------------------Formulario de Facturas----------------------------------*/
+.contenedor{
+    position: absolute;
+    top: 2rem;
+    left: 15rem;
+    width: 750px;
+    height: 290px;
+    background-color: #353A40;
+    border-radius: 7px;
+    display: none;
+}
+
+.contenedor form{
+    margin: 1rem;
+}
+
+.contenedor form h2{
+    margin-left: 19rem;
+    margin-bottom: 1.5rem;
+    color: white;
+}
+
+
+.contenedor form h3{
+    margin-top: 1.5rem;
+    margin-left: 16rem;
+    margin-bottom: 1.5rem;
+    color: white;
+}
+
+.contenedor form label{
+    color: white;
+}
+
+.contenedor form input{
+    background-color: transparent;
+    border: none;
+    border-bottom: 3px solid white;
+    color: white;
+    text-align: center;
+}
+
+.contenedor form button{
+    margin-left: 2.5rem;
+    border: 2px solid white;
+    background-color: transparent;
+}
+
+.contenedor form button:hover{
+    background-color: #353A40;
+}
 
 /*-------------------Formulario Notificación---------------------------------*/
 .notify{
@@ -51,7 +107,7 @@
     left: 20rem;
     width: 500px;
     border-radius: 20px;
-    background-color: rgb(89, 89, 100);
+    background-color:  #353A40;
     color: black;
     display: none;
 }
@@ -59,6 +115,10 @@
 .notify form{
     margin: 30px;
     width: 450px;
+}
+
+.notify form label{
+    color: white;
 }
 
 /*------------------------Tabla Cola Facturas---------------------------*/

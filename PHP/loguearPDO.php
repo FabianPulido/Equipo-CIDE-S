@@ -2,7 +2,7 @@
 
 include 'conex.php';
     
-$stmt = $conn->prepare("SELECT * FROM empresa");
+$stmt = $conn->prepare("SELECT * FROM empresas");
 $stmt->setFetchMode(PDO::FETCH_ASSOC);
 $stmt->execute();
 
@@ -15,12 +15,12 @@ try {
     $Pass =$_POST['PasswordEmpresa'];
     $email =$_POST['EmailEmpresa'];
 
-    if ($Usuario == $row['Nombre_empresa'] AND $email == $row['Correo_emp'] AND $Pass == $row['Contrasena_emp']) {
+    if ($Usuario == $row['Nombre_Empresa'] AND $email == $row['Correo_Empresa'] AND $Pass == $row['Password_Empresa']) {
         
         echo "<script>
-    alert('Bienvenid@');
-    window.location= 'DashboardAdmin.php'
-</script>";
+            alert('Bienvenid@');
+            window.location= 'DashboardAdmin.php'
+        </script>";
        
     }else{
         echo "<script>
