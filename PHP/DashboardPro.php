@@ -64,6 +64,7 @@
             <th scope="col">Id Proveedor</th>
             <th scope="col">Producto</th>
             <th scope="col">Cantidad</th>
+            <th scope="col">Precio</th>
           </tr>
         </thead>
         <tbody>
@@ -99,10 +100,15 @@
                   <td>
                     {$row['Cantidad_Producto']}
                   </td>
+
+                  <td>
+                    {$row['Precio_Producto']}
+                  </td>
                   
                   <td>
                     <button type='submit' name='botonborrar' id='botonborrar' class='btn btn-outline-primary'>Borrar</button>
-                  </td>
+                    <button type='submit' name='botonborrar' id='botonborrar' class='btn btn-outline-success'>Comprar</button>
+                    </td>
 
                 </form>
               </tr>";
@@ -112,26 +118,6 @@
       </table>
     </div>
 
-    <div class="tabla-productos">
-      <table class="table table-striped">
-        <thead>
-          <tr>
-            <th scope="col">#</th>
-            <th scope="col">First</th>
-            <th scope="col">Last</th>
-            <th scope="col">Handle</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <th scope="row">1</th>
-            <td>Mark</td>
-            <td>Otto</td>
-            <td>@mdo</td>
-          </tr>
-        </tbody>
-      </table>
-    </div>
 
     <div class="form-notify">
       <!-- Formulario de registro -->
