@@ -8,7 +8,6 @@ include '../conex.php';
 
 try {
  
-
   // sql to delete a record
   $sql = "DELETE FROM productos WHERE Id_Producto='$ID'";
 
