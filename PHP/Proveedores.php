@@ -49,7 +49,7 @@
     <!-- Formulario de Login -->
     <section class="form" id="login">
         
-        <form action="PHP/loguearPDO.php" method="post" >
+    <form action="FormPro/loguearProvPDO.php" method="post" >
 
             <h4>Inicia sesion</h4>
 
@@ -62,7 +62,7 @@
             <!-- Input PasswordEmpresa -->
             <input class="controls" type="password" name="PasswordProveedor"  placeholder="Ingrese su Contraseña">
     
-            <input class="botons" type="submit" value="Registrar">
+            <input class="botons" type="submit" value="Validar">
 
         </form>
 
