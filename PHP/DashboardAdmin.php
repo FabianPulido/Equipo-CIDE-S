@@ -1,6 +1,7 @@
 <!doctype html>
 <html lang="en">
 <head>
+  
   <!-- Required meta tags -->
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -45,9 +46,7 @@
     </ol>
   </div>
 
-
-
-
+  
   <!-- Formulario de Registrar Sucursal -->
   <section class="form-register" id="form">
     <form action="FormAdmin/RegistrarSS.php" method="post">
@@ -110,7 +109,6 @@
       </tbody>
     </table>
   </div>
-
     
   <!-- Optional JavaScript; choose one of the two! -->
 
