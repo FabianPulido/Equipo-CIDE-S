@@ -19,35 +19,82 @@
     <!-- Navbar Centro Control -->
     <div class="navbar-SS">
 
-
-        <a href="../index.html">
+        <a href="">
             HackSiigo
         </a>
 
-
         <ol>
             <li>
-                <p>
-                    Generar factura
+                <p onclick="fact()">
+                    Nueva factura
+                    <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-bookmark-plus" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd" d="M2 2a2 2 0 0 1 2-2h8a2 2 0 0 1 2 2v13.5a.5.5 0 0 1-.777.416L8 13.101l-5.223 2.815A.5.5 0 0 1 2 15.5V2zm2-1a1 1 0 0 0-1 1v12.566l4.723-2.482a.5.5 0 0 1 .554 0L13 14.566V2a1 1 0 0 0-1-1H4z"/>
+                        <path fill-rule="evenodd" d="M8 4a.5.5 0 0 1 .5.5V6H10a.5.5 0 0 1 0 1H8.5v1.5a.5.5 0 0 1-1 0V7H6a.5.5 0 0 1 0-1h1.5V4.5A.5.5 0 0 1 8 4z"/>
+                    </svg>
                 </p>
             </li>
             <li>
                 <p onclick="notify()">
                     Notificaciones
+                    <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-app-indicator" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd" d="M5.5 2A3.5 3.5 0 0 0 2 5.5v5A3.5 3.5 0 0 0 5.5 14h5a3.5 3.5 0 0 0 3.5-3.5V8a.5.5 0 0 1 1 0v2.5a4.5 4.5 0 0 1-4.5 4.5h-5A4.5 4.5 0 0 1 1 10.5v-5A4.5 4.5 0 0 1 5.5 1H8a.5.5 0 0 1 0 1H5.5z"/>
+                        <path d="M16 3a3 3 0 1 1-6 0 3 3 0 0 1 6 0z"/>
+                    </svg>
                 </p>
             </li>
-            <li>
-                <a href="" class="close">
-                    Cerrar Sesion
-                </a>
-            </li>
         </ol>
+
+        <a href="../index.html" class="close">
+            Salir
+            <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-door-closed" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                <path fill-rule="evenodd" d="M3 2a1 1 0 0 1 1-1h8a1 1 0 0 1 1 1v13h1.5a.5.5 0 0 1 0 1h-13a.5.5 0 0 1 0-1H3V2zm1 13h8V2H4v13z"/>
+                <path d="M9 9a1 1 0 1 0 2 0 1 1 0 0 0-2 0z"/>
+            </svg>
+        </a>
 
     </div>
 
 
     <!-- Formulario Factura -->
-    <h3>Factura</h3>
+    <div class="contenedor" id="factura">
+        <form action="" method="post">
+            <h2>Factura</h2>
+            <label id="fechat">
+                Fecha: <br>
+                <input type="date" id="fecha" placeholder=".." required>
+            </label>
+
+            <label id="factt">
+                Factura No: <br>
+                <input type="number" id="fact" placeholder=".." required>
+            </label>
+
+            <label id="stockt">
+                Stock: <br>
+                <input type="number" id="stock" placeholder="?" required>
+            </label>
+            
+
+            <label id="operaciont">
+                Operación: <br>
+                <input id="operacion" placeholder=".." required>
+            </label>
+
+            <h3>Detalles de compra</h3>
+            <label id="prodt">
+                Producto: <br>
+                <input type="text" id="prod" placeholder=".." required>
+            </label>
+
+            <label id="entret">
+                Fecha de entrega: <br>
+                <input type="date" id="entre" placeholder=".." required>
+            </label>
+
+            <button class="btn btn-primary" type="submit" id="boton">Cargar Factura</button>
+            <button class="btn btn-primary" type="submit" id="boton">Confirmar Venta</button>
+        </form>
+    </div>
 
     <!-- Formulario Notificación -->
     <div class="notify" id="notify">
