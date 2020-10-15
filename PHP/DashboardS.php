@@ -154,25 +154,25 @@
 
         <!-- Formulario Inventario -->
         <div class="inventario" id="inv">
-            <form action="" method="POST">
+            <form action="FormSS/AgregarInventario.php" method="POST">
                 <h5>
                     Inventario
                 </h5>
                 <div class="form-group">
                     <label for="disabledTextInput">Sucursal</label>
-                    <input type="text" class="form-control" placeholder="Sucursal">
+                    <input type="text" name="Sucursal" class="form-control" placeholder="Sucursal">
                 </div>
                 <div class="form-group">
                     <label for="disabledSelect">Producto</label>
-                    <input type="text"  class="form-control" placeholder="Nombre producto">
+                    <input type="text" name="Producto" class="form-control" placeholder="Nombre producto">
                 </div>
                 <div class="form-group">
                     <label for="disabledSelect">Precio</label>
-                    <input type="text"  class="form-control" placeholder="Precio producto">
+                    <input type="text" name="Precio" class="form-control" placeholder="Precio producto">
                 </div>
                 <div class="form-group">
                     <label for="disabledSelect">Cantidad</label>
-                    <input type="text"  class="form-control" placeholder="Cantidad producto">
+                    <input type="text" name="Cantidad" class="form-control" placeholder="Cantidad producto">
                 </div>
                 <button type="submit" class="btn btn-primary w-100">
                     Enviar notificación
@@ -180,27 +180,57 @@
             </form>
         </div>
 
-        <div class="table-inventario">
-            <table class="table">
+        <!-- Tabla para mostrar las sucursales -->   
+        <div class="tabla-sucursal w-75 position-absolute mt-3 ml-4" id="TInv">
+            <table class="table table-dark" >
                 <thead>
                     <tr>
-                    <th scope="col">#</th>
-                    <th scope="col">Nombre</th>
-                    <th scope="col">Valor</th>
-                    <th scope="col">Cantidad</th>
+                        <th scope="col">#</th>
+                        <th scope="col">Nombre</th>
+                        <th scope="col">Valor</th>
+                        <th scope="col">Cantidad</th>
                     </tr>
                 </thead>
                 <tbody>
-                    <tr>
-                        <th scope="row"></th>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                    </tr>
+                    <?php
+                    include 'conex.php';
+                    $stmt = $conn->prepare("SELECT * FROM inventaerio WHERE Id_Sucursal = 3");
+                    // Especificamos el fetch mode antes de llamar a fetch()
+                    $stmt->setFetchMode(PDO::FETCH_ASSOC);
+                    // Ejecutamos
+                    $stmt->execute();
+                    // Mostramos los resultados
+                    while ($row = $stmt->fetch()){
+                        echo "<tr>
+                        <form action='FormAdmin/Eliminar.php' method='POST'>
+                        <th scope='row'>
+                            {$row['Id_Inventario']} 
+                        </th>
+                        <input type='hidden' value='{$row['Id_Inventario']}' name='usuario'>
+                        
+                        <td>
+                            {$row['Nombre_Producto']} 
+                        </td>
+                    
+                        <td>
+                            {$row['Valor_Producto']} 
+                        </td>
+                        
+                        <td>
+                            {$row['Cantidad_Producto']}
+                        </td>
+                        
+                        <td>
+                            <button type='submit' name='botonborrar' id='botonborrar' class='btn btn-outline-primary'>Borrar</button>
+                        </td>
+
+                        </form>
+                        </tr>";
+                    }           
+                    ?>
                 </tbody>
             </table>
         </div>
-
     </div>
 
     <div class="aside-right">
