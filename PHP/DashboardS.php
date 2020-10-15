@@ -188,6 +188,7 @@
                         <th scope="col">Nombre</th>
                         <th scope="col">Valor</th>
                         <th scope="col">Cantidad</th>
+                        <th scope="col">Operacion</th>
                     </tr>
                 </thead>
                 <tbody>
@@ -202,7 +203,7 @@
                     // Mostramos los resultados
                     while ($row = $stmt->fetch()){
                         echo "<tr>
-                        <form action='FormAdmin/Eliminar.php' method='POST'>
+                        <form action='FormSS/EliminarInventario.php' method='POST'>
                         <th scope='row'>
                             {$row['Id_Inventario']} 
                         </th>
@@ -222,6 +223,7 @@
                         
                         <td>
                             <button type='submit' name='botonborrar' id='botonborrar' class='btn btn-outline-primary'>Borrar</button>
+                            <button type='submit' name='botonborrar' id='botonborrar' class='btn btn-outline-primary'>Editar</button>
                         </td>
 
                         </form>

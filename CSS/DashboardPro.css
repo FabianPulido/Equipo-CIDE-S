@@ -135,6 +135,11 @@
     margin: 15px;
 }
 
+.tablero-notify .tabla-notify table{
+    height: 200px;
+    overflow-y: auto;
+}
+
 .tablero-notify .tabla-productos{
     width: 50%;
     height: 250px;

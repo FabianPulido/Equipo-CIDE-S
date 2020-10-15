@@ -60,18 +60,54 @@
         <thead>
           <tr>
             <th scope="col">#</th>
-            <th scope="col">First</th>
-            <th scope="col">Last</th>
-            <th scope="col">Handle</th>
+            <th scope="col">Id Sucursal</th>
+            <th scope="col">Id Proveedor</th>
+            <th scope="col">Producto</th>
+            <th scope="col">Cantidad</th>
           </tr>
         </thead>
         <tbody>
-          <tr>
-            <th scope="row">1</th>
-            <td>Mark</td>
-            <td>Otto</td>
-            <td>@mdo</td>
-          </tr>
+        <?php
+            include 'conex.php';
+            $stmt = $conn->prepare("SELECT * FROM notificaciones");
+            // Especificamos el fetch mode antes de llamar a fetch()
+            $stmt->setFetchMode(PDO::FETCH_ASSOC);
+            // Ejecutamos
+            $stmt->execute();
+            // Mostramos los resultados
+            while ($row = $stmt->fetch()){
+
+              echo "<tr>
+                <form action='' method='POST'>
+                  <th scope='row'>
+                    {$row['Id_Notificacion']} 
+                  </th>
+                  <input type='hidden' value='{$row['Id_Sucursal']}' name='usuario'>
+                
+                  <td>
+                    {$row['Id_Sucursal']} 
+                  </td>
+              
+                  <td>
+                    {$row['Id_Proveedor']} 
+                  </td>
+                
+                  <td>
+                    {$row['Nombre_Producto']}
+                  </td>
+
+                  <td>
+                    {$row['Cantidad_Producto']}
+                  </td>
+                  
+                  <td>
+                    <button type='submit' name='botonborrar' id='botonborrar' class='btn btn-outline-primary'>Borrar</button>
+                  </td>
+
+                </form>
+              </tr>";
+              }           
+            ?>
         </tbody>
       </table>
     </div>
