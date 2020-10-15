@@ -64,15 +64,12 @@
     </section>
 
     <!-- Tabla para mostrar las sucursales -->
-    <div class="show-SS">
+    <div class="show-SS" style="height:100%;width:100%;">
        
-       
-
-        
-    
-
-    <table class="table table-dark">
-  <thead>
+       <table class="table table-dark">
+     <thead>
+     <th scope="col"><input type="text"></th>
+       <tr>
     <tr>
       <th scope="col">ID</th>
       <th scope="col">Nombre</th>
