@@ -77,7 +77,7 @@
           <th scope="col">Stock</th>
           <th scope="col">Valor</th>
           <th scope="col">Stock Min.</th>
-          <th scope="col">Código de Prooveedor</th>
+          <th scope="col">Proveedor</th>
           <th scope="col">Proceso</th>
         </tr>
       </thead>
