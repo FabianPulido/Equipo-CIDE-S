@@ -84,7 +84,7 @@
       </thead>
       <tbody>
         <?php
-          include 'conex.php';
+          require 'conex.php';
           $stmt = $conn->prepare("SELECT * FROM productos Join proveedores");
           // Especificamos el fetch mode antes de llamar a fetch()
           $stmt->setFetchMode(PDO::FETCH_ASSOC);
@@ -93,7 +93,7 @@
           // Mostramos los resultados
           while ($row = $stmt->fetch()){
             echo "<tr>
-            <form action='EliminarProd.php' method='POST'>
+            <form action='FormPro/EliminarProd.php' method='POST'>
               <th scope='row'>
                 {$row['Id_Producto']} 
               </th>
