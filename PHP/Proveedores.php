@@ -8,6 +8,7 @@
 
     <!-- Link CSS -->
     <link rel="stylesheet" href="../CSS/Proveedores.css">
+    <link rel="stylesheet" href="../CSS/Prov.css">
 
 
     <title>
@@ -33,17 +34,39 @@
                 </a>
             </li>
             <li>
-                <a onclick="Login()">
+                <a onclick="Create()">
                     Registrarse
                 </a>
             </li>
             <li>
-                <p >
+                <p onclick="Login()">
                     Login
                 </p>
             </li>
         </ol>
     </div>
+
+    <!-- Formulario de Login -->
+    <section class="form" id="login">
+        
+    <form action="FormPro/loguearProvPDO.php" method="post" >
+
+            <h4>Inicia sesion</h4>
+
+            <!-- Input NombreEmpresa -->
+            <input class="controls" type="text" name="NombreProveedor"  placeholder="Ingrese su Nombre">
+    
+            <!-- Input EmailEmpresa -->
+            <input class="controls" type="email" name="EmailProveedor"  placeholder="Ingrese su Correo">
+    
+            <!-- Input PasswordEmpresa -->
+            <input class="controls" type="password" name="PasswordProveedor"  placeholder="Ingrese su Contraseña">
+    
+            <input class="botons" type="submit" value="Validar">
+
+        </form>
+
+    </section>
 
     <!-- Banner central -->
     <div class="aside-left" id="bann">
