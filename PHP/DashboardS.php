@@ -63,65 +63,6 @@
 
     </div>
 
-
-    <!-- Formulario Factura -->
-    <div class="contenedor" id="factura">
-        <form action="" method="post">
-            <h2>Factura</h2>
-            <label id="fechat">
-                Fecha: <br>
-                <input type="date" id="fecha" placeholder=".." required>
-            </label>
-
-            <label id="factt">
-                Factura No: <br>
-                <input type="number" id="fact" placeholder=".." required>
-            </label>
-
-            <label id="stockt">
-                Stock: <br>
-                <input type="number" id="stock" placeholder="?" required>
-            </label>
-            
-
-            <label id="operaciont">
-                Operación: <br>
-                <input id="operacion" placeholder=".." required>
-            </label>
-
-            <h3>Detalles de compra</h3>
-            <label id="prodt">
-                Producto: <br>
-                <input type="text" id="prod" placeholder=".." required>
-            </label>
-
-            <label id="entret">
-                Fecha de entrega: <br>
-                <input type="date" id="entre" placeholder=".." required>
-            </label>
-
-            <button class="btn btn-primary" type="submit" id="boton">Cargar Factura</button>
-            <button class="btn btn-primary" type="submit" id="boton">Confirmar Venta</button>
-        </form>
-    </div>
-
-    <!-- Formulario Notificación -->
-    <div class="notify" id="notify">
-        <form action="" method="POST">
-            <div class="form-group">
-                <label for="disabledTextInput">Proveedor</label>
-                <input type="text" class="form-control" placeholder="Nombre proveedor">
-            </div>
-            <div class="form-group">
-                <label for="disabledSelect">Producto</label>
-                <input type="text"  class="form-control" placeholder="Nombre producto">
-            </div>
-            <button type="submit" class="btn btn-primary">
-                Enviar notificación
-            </button>
-        </form>
-    </div>
-
     <!-- Tabla para visualizar la cola de factura -->
     <div class="cola-fac">
 
@@ -151,6 +92,64 @@
 
 
     <div class="aside-center">
+
+        <!-- Formulario Factura -->
+        <div class="contenedor" id="factura">
+            <form action="" method="post">
+                <h2>Factura</h2>
+                <label id="fechat">
+                    Fecha: <br>
+                    <input type="date" id="fecha" placeholder=".." required>
+                </label>
+
+                <label id="factt">
+                    Factura No: <br>
+                    <input type="number" id="fact" placeholder=".." required>
+                </label>
+
+                <label id="stockt">
+                    Stock: <br>
+                    <input type="number" id="stock" placeholder="?" required>
+                </label>
+                
+
+                <label id="operaciont">
+                    Operación: <br>
+                    <input id="operacion" placeholder=".." required>
+                </label>
+
+                <h3>Detalles de compra</h3>
+                <label id="prodt">
+                    Producto: <br>
+                    <input type="text" id="prod" placeholder=".." required>
+                </label>
+
+                <label id="entret">
+                    Fecha de entrega: <br>
+                    <input type="date" id="entre" placeholder=".." required>
+                </label>
+
+                <button class="btn btn-primary" type="submit" id="boton">Cargar Factura</button>
+                <button class="btn btn-primary" type="submit" id="boton">Confirmar Venta</button>
+            </form>
+        </div>
+
+        <!-- Formulario Notificación -->
+        <div class="notify" id="notify">
+            <form action="" method="POST">
+                <div class="form-group">
+                    <label for="disabledTextInput">Proveedor</label>
+                    <input type="text" class="form-control" placeholder="Nombre proveedor">
+                </div>
+                <div class="form-group">
+                    <label for="disabledSelect">Producto</label>
+                    <input type="text"  class="form-control" placeholder="Nombre producto">
+                </div>
+                <button type="submit" class="btn btn-primary">
+                    Enviar notificación
+                </button>
+            </form>
+        </div>
 
         <!-- Formulario Inventario -->
         <div class="inventario" id="inv">
