@@ -21,9 +21,9 @@
 
     if ($stmt == true) {
         echo "<script>
-        alert('Sucursal registrada');
-        window.location= '../DashboardAdmin.php'
-    </script>";
+            alert('Sucursal registrada');
+            window.location= '../DashboardS.php'
+        </script>";
     }else{
         print "error al insertar datos"; 
     }

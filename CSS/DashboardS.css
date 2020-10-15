@@ -1,0 +1,70 @@
+*{
+    padding: 0%;
+    margin: 0%;
+    box-sizing: border-box;
+}
+
+/*---------------------------------------------------*/
+
+.navbar-SS{
+    width: 12rem;
+    height: 43.5em;
+    background-color: rgb(57, 57, 77);
+    color: white;
+    border-radius: 0px 10px 10px 0px;
+}
+
+.navbar-SS a{
+    position: relative;
+    color: white;
+    text-decoration: none;
+    font-size: 24px;
+    top: 2rem;
+    left: 2rem;
+    bottom: 2rem;
+}
+
+.navbar-SS a:hover{
+    color: white;
+    text-decoration: none;
+}
+
+.navbar-SS ol{
+    list-style: none;
+    margin: 6rem 2rem 2rem 2rem;
+}
+
+.navbar-SS ol li{
+    margin-top: 5rem;
+}
+
+.navbar-SS ol li p{
+    cursor: pointer;
+}
+
+/*-------------------Formulario de Facturas----------------------------------*/
+
+/*-------------------Formulario Notificación---------------------------------*/
+.notify{
+    position: absolute;
+    top: 7rem;
+    left: 20rem;
+    width: 500px;
+    border-radius: 20px;
+    background-color: rgb(89, 89, 100);
+    color: black;
+    display: none;
+}
+
+.notify form{
+    margin: 30px;
+    width: 450px;
+}
+
+/*------------------------Tabla Cola Facturas---------------------------*/
+.cola-fac{
+    position: absolute;
+    right: 5rem;
+    top: 2rem;
+    width: 10rem;
+}
