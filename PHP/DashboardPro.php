@@ -84,7 +84,7 @@
       </thead>
       <tbody>
         <?php
-          include '../conex.php';
+          include 'conex.php';
           $stmt = $conn->prepare("SELECT * FROM productos Join proveedores");
           // Especificamos el fetch mode antes de llamar a fetch()
           $stmt->setFetchMode(PDO::FETCH_ASSOC);
