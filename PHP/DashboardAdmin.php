@@ -11,6 +11,7 @@
   <!-- Link CSS -->
   <link rel="stylesheet" href="../CSS/Admin/Main.css">
   <link rel="stylesheet" href="../CSS/Admin/Sucursal.css">
+  
 
   <title>Dashboard Admin</title>
 
@@ -70,59 +71,22 @@
     
 
   <!-- Tabla para mostrar las sucursales -->   
-  <div class="tabla-sucursal w-50 position-absolute mt-3 ml-4">
-    <table class="table table-dark" >
-      <thead>
-        <tr>
-          <th scope="col">ID</th>
-          <th scope="col">Nombre</th>
-          <th scope="col">Dirección</th>
-          <th scope="col">Telefono</th>
-          <th scope="col">Procedimiento</th>
-        </tr>
-      </thead>
-      <tbody>
-        <?php
-          include 'conex.php';
-          $stmt = $conn->prepare("SELECT * FROM sucursales");
-          // Especificamos el fetch mode antes de llamar a fetch()
-          $stmt->setFetchMode(PDO::FETCH_ASSOC);
-          // Ejecutamos
-          $stmt->execute();
-          // Mostramos los resultados
-          while ($row = $stmt->fetch()){
+  <section class="principal2">
 
-            echo "<tr>
-            <form action='FormAdmin/Eliminar.php' method='POST'>
-              <th scope='row'>
-                {$row['Id_Sucursal']} 
-              </th>
-              <input type='hidden' value='{$row['Id_Sucursal']}' name='usuario'>
-            
-              <td>
-                {$row['Nombre_sucursal']} 
-              </td>
-          
-              <td>
-                {$row['Direccion_Sucursal']} 
-              </td>
-            
-              <td>
-                {$row['Telefono_Sucursal']}
-              </td>
-              
-              <td>
-                <button type='submit' name='botonborrar' id='botonborrar' class='btn btn-outline-primary'>Borrar</button>
-                <p class='btn btn-outline-primary' onclick='go()' >Ingresar</p>
-              </td>
+      <h1>BUSQUEDA DE SUCURSALES</h1>
 
-            </form>
-            </tr>";
-          }           
-        ?>
-      </tbody>
-    </table>
-  </div>
+        <div class="formularioaj">
+            <label for="caja_busqueda">Buscar</label>
+                <input type="text" name="caja_busqueda" id="caja_busqueda" class="cajita"></input>
+
+  
+        </div>
+
+        <div id="datos" class=""></div>
+
+
+  </section>
+  
 
   <!-- Formulario ingreso sucursal -->
     <!-- Formulario de Registrar Sucursal -->
@@ -142,6 +106,7 @@
   </section>
 
   <script src="../JS/Admin/Admin.js"></script>
-
+  <script type="text/javascript" src="../JS/jquery.min.js"></script>
+  <script type="text/javascript" src="../JS/main2.js"></script>
 </body>
 </html>

@@ -68,63 +68,30 @@
 
     </section>
 
-     <!-- Tabla para mostrar los productos -->   
-  <div class="tabla-sucursal w-50 position-absolute mt-3 ml-4">
-    <table class="table table-dark" >
-      <thead>
-        <tr>
-          <th scope="col">ID</th>
-          <th scope="col">sucursal</th>
-          <th scope="col">proveedor</th>
-          <th scope="col">producto</th>
-          <th scope="col">cantidad</th>
-        </tr>
-      </thead>
-      <tbody>
-        <?php
-          require 'conex.php';
-          $stmt = $conn->prepare("SELECT * FROM hackathon.notificaciones");
-          // Especificamos el fetch mode antes de llamar a fetch()
-          $stmt->setFetchMode(PDO::FETCH_ASSOC);
-          // Ejecutamos
-          $stmt->execute();
-          // Mostramos los resultados
-          while ($row = $stmt->fetch()){
-            echo "<tr>
-            <form action='' method='POST'>
-              <th scope='row'>
-                {$row['Id_Notificacion']} 
-              </th>
-              <input type='hidden' value='{$row['Id_Sucursal']}' name=''>
-            
-              <td>
-                {$row['Id_Sucursal']} 
-              </td>
-          
-              <td>
-                {$row['Id_Proveedor']} 
-              </td>
-            
-              <td>
-                {$row['Nombre_Producto']}$
-              </td>
-              <td>
-                {$row['Cantidad_Producto']}
-              </td>
-              
-              <td>
-                <button type='submit' class='btn btn-outline-primary'>Responder</button>
-              </td>
+<!-- Tabla para mostrar los productos -->   
+  <!-- Tabla para mostrar las sucursales -->   
+  <section class="principal2">
 
-            </form>
-            </tr>";
-          }           
-        ?>
+      <h1>BUSQUEDA DE PRODUCTOS</h1>
+
+        <div class="formularioaj">
+            <label for="caja_busqueda">Buscar</label>
+                <input type="text" name="caja_busqueda" id="caja_busqueda" class="cajita"></input>
+
+  
+        </div>
+
+        <div id="datos" class=""></div>
+
+
+  </section>
       </tbody>
     </table>
   </div>
 
     <!-- Scripts del projecto -->
+    <script type="text/javascript" src="../JS/jquery.min.js"></script>
+  <script type="text/javascript" src="../JS/main3.js"></script>
     <script src="../../JS/Admin/Admin.js"></script>
   <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
