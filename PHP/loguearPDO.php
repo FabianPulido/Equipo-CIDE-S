@@ -7,7 +7,10 @@ $stmt->setFetchMode(PDO::FETCH_ASSOC);
 $stmt->execute();
 
 
-foreach ($stmt as $row) {}
+foreach ($stmt as $row) {
+}
+
+    //print $row['Nombre_Empresa'] . $row['Correo_Empresa'] . $row['Password_Empresa'];
 
 try {
 
@@ -33,5 +36,7 @@ try {
 } catch (PDOEXception $e) {
     print "Error" . $e->getMessage();
 }
+
+
 
 ?>

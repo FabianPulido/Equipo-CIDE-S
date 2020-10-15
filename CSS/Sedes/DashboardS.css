@@ -30,8 +30,8 @@
 }
 
 .navbar-SS .close{
-    position: absolute;
-    top: 40rem;
+    top: 3rem;
+    margin-right: 5rem;
     font-size: 20px;
 }
 
@@ -44,7 +44,7 @@
     list-style: none;
     position: absolute;
     top: -2rem;
-    right: 2rem;
+    right: 7rem;
     display: flex;
 }
 

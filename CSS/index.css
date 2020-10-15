@@ -75,11 +75,12 @@ body{
 /*----------------Formulario login-------------------------------------*/
 
 .form-register {
+    position: absolute;
     width: 400px;
     background: #24303c;
     padding: 30px;
     margin-left: 37%;
-    margin-top: 30px;
+    top: 4rem;
     border-radius: 10px;
     font-family: 'calibri';
     color: white;
