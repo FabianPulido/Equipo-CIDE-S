@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="en">
+<html lang="es">
 <head>
   <!-- Required meta tags -->
   <meta charset="utf-8">
@@ -131,15 +131,89 @@
   <!-- Optional JavaScript; choose one of the two! -->
   <script src="../JS/Admin/Admin.js"></script>
 
-  <!-- Option 1: jQuery and Bootstrap Bundle (includes Popper) -->
-  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
+            <h4>Registrar Sede/Sucursal</h4>
 
-  <!-- Option 2: jQuery, Popper.js, and Bootstrap JS
-  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
-  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.min.js" integrity="sha384-w1Q4orYjBQndcko6MimVbzY0tgp4pWB4lZ7lr30WKz0vr/aWKhXdBNmNb5D92v7s" crossorigin="anonymous"></script>
-  -->
+            <!-- Input NombreSede/Sucursal -->
+            <input class="controls" type="text" name="NombreSede" placeholder="Ingrese Nombre Sede/Sucursal">
+    
+            <!-- Input EmailSede/Sucursal -->
+            <input class="controls" type="text" name="EmailSede" placeholder="Ingrese Direccion Sede/Sucursal">
+    
+            <!-- Input PasswordSede/Sucursal -->
+            <input class="controls" type="text" name="PasswordSede" placeholder="Ingrese Telefono Sede/Sucursal">
+
+            <input class="botons" type="submit" value="Registrar">
+
+        </form>
+
+    </section>
+
+    <!-- Tabla para mostrar las sucursales -->
+    <div class="show-SS" style="height:450px;width:100%;overflow:scroll;">
+       
+      
+    <table class="table table-dark" >
+  <thead>
+  <th scope="col"><input type="text"></th>
+    <tr>
+      <th scope="col">ID</th>
+      <th scope="col">Nombre</th>
+      <th scope="col">Dirección</th>
+      <th scope="col">Telefono</th>
+      <th scope="col">Procedimiento</th>
+    </tr>
+  </thead>
+  <tbody>
+  
+    <?php
+                    
+
+      include 'conex.php';
+                    
+     $stmt = $conn->prepare("SELECT * FROM sucursales");
+      // Especificamos el fetch mode antes de llamar a fetch()
+     $stmt->setFetchMode(PDO::FETCH_ASSOC);
+    // Ejecutamos
+      $stmt->execute();
+      // Mostramos los resultados
+       while ($row = $stmt->fetch()){
+        echo "<tr>
+        <form action='Eliminar.php' method='POST'>
+        <th scope='row'>
+        {$row['Id_sucursal']} </th>
+        <input type='hidden' value='{$row['Id_sucursal']}' name='usuario'>
+        
+        <td>
+        {$row['Nombre_sucursal']} </td>
+       
+        <td>
+        {$row['Direccion_sucursal']} </td>
+        
+        <td>
+        {$row['Telefono_sucursal']}</td>
+        <td>
+        
+        <button type='submit' name='botonborrar' id='botonborrar'>Borrar</button>
+        </td>
+        </form>
+        </tr>";
+        }
+                    
+                  
+   ?>
+  </tbody>
+</table>
+  
+    </div>
+    <div class="contenedor_imagen">
+    <div class="imagensucur">
+        <img src="../ASSETS/imagensucursales.jpg" width=100% height=100%;>
+      </div>
+      </div>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+ 
 
 </body>
 </html>

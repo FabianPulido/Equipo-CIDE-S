@@ -7,7 +7,8 @@ $pclave = $_POST['PasswordProveedor'];
 $nombre = $_POST['NombreProveedor'];
 
 
-$stmt = $conn->prepare("INSERT INTO proveedor (Nombre, Correo_proveedor, Password_proveedor) VALUES (?, ?, ?)");
+$stmt = $conn->prepare("INSERT INTO proveedores (Nombre_Proveedor, Correo_Proveedor, Password_Proveedor)
+ VALUES (?, ?, ?)");
 // Bind
 
 $stmt->bindParam(1, $nombre);
